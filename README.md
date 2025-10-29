@@ -1,4 +1,3 @@
-```markdown
 # ECGFounder Real-Time Deployment: Proof-of-Concept for Edge-Based Clinical Decision Support
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -58,7 +57,7 @@ Integrated Gradients attribution analysis for per-lead importance. Clinical vali
 
 | Metric | Value | Comparison |
 |--------|-------|------------|
-| Macro AUROC (71 classes) | 0.909 | > Ribeiro 2020 (0.887), Hannun 2019 (0.853) |
+| Macro AUROC (71 classes) | 0.909 | > Ribeiro 2020 (0.887)[3], Hannun 2019 (0.853)[4] |
 | Inference latency (ARM) | 115 ms | Real-time capable (<500 ms threshold) |
 | Noise recovery rate | 95% | AUROC: 0.909 → 0.545 (noisy) → 0.891 (filtered) |
 | Hardware cost | $100 | cheaper than GPU systems |
@@ -143,9 +142,9 @@ ecg-founder-edge-cds/
 ## Limitations & Future Work
 
 ### Current Status
-✅ **Technical validation complete:** Model deployment, preprocessing, latency benchmarking, benchmark evaluation
-⚠️ **Explainability in progress:** Lead-level attribution validated; segment-level analysis under development
-❌ **Clinical validation pending:** Prospective trial with real patients required
+✅ **Technical validation complete:** Model deployment, preprocessing, latency benchmarking, benchmark evaluation.
+⚠️ **Explainability in progress:** Lead-level attribution validated; segment-level analysis under development.
+❌ **Clinical validation pending:** Prospective trial with real patients required.
 
 ### Known Limitations
 - Validated only on PTB-XL benchmark dataset (not real-world clinical data)
@@ -224,9 +223,8 @@ This work builds upon the ECGFounder foundation model developed by Li et al. [1]
 
 ## Contact
 
-**Maintainer:** [Ghasem]  
-**Email:** [dr.ghasemdolatkhah@gmail.com]  
+**Maintainer:** Ghasem  
+**Email:** dr.ghasemdolatkhah@gmail.com  
 **Issues:** [GitHub Issues](https://github.com/GhIrani33/ecgfounder-edge-cds/issues)
 
 For questions about ECGFounder model, contact original authors.
-```
