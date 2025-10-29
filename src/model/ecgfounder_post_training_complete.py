@@ -6,6 +6,9 @@ Robust post-validation pipeline for ECGFounder on PTB-XL:
 - Builds PTB-XL multilabel tasks (all71/diag44/sub23/rhythm12) with standard strat_fold split
 - Baseline eval, Initialization (linear probing with frozen backbone), Regularization (full finetune with cosine + dropout)
 - Saves detailed logs, per-epoch metrics, and checkpoints
+
+Author: Ghasem
+https://github.com/GhIrani33
 """
 
 import os
