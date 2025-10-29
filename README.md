@@ -118,7 +118,6 @@ ecg-founder-edge-cds/
 │   ├── METHODS.md                 # Scientific methodology
 │   
 │   └── DEPLOYMENT.md              # Hardware setup guide
-└── setup/                         # Installation & download scripts
 ```
 
 **Note:** Model weights and PTB-XL dataset are not included (large files). Download via scripts in `setup/`.
