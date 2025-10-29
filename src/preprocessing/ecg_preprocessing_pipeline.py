@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-ecg_preprocessing_pipeline.py - FINAL VERSION FOR HOSPITAL-GRADE ECG
+ecg_preprocessing_pipeline.py
 
 Target Use Case:
 - Hospital-grade 12-lead ECG devices (Schiller, GE, Philips, etc.)
@@ -16,7 +16,7 @@ Preprocessing Philosophy:
 - Scientifically sound: preserves train-test distribution consistency
 
 Author: Ghasem
-
+https://github.com/GhIrani33
 """
 
 import warnings
