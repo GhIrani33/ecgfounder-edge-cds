@@ -1,0 +1,522 @@
+Inspected: D:\Project\ECG\ECGFounder\checkpoint\12_lead_ECGFounder.pth
+
+Top-level type: dict
+
+1. epoch -> int
+2. step -> int
+3. state_dict -> dict len=509
+4. optimizer -> dict len=2
+5. scheduler -> dict len=14
+6. val_auroc -> float64
+
+
+state-dict keys count: 509
+   1. first_conv.conv.weight -> Tensor, shape=(64, 12, 16), dtype=torch.float32
+   2. first_conv.conv.bias -> Tensor, shape=(64,), dtype=torch.float32
+   3. first_bn.weight -> Tensor, shape=(64,), dtype=torch.float32
+   4. first_bn.bias -> Tensor, shape=(64,), dtype=torch.float32
+   5. first_bn.running_mean -> Tensor, shape=(64,), dtype=torch.float32
+   6. first_bn.running_var -> Tensor, shape=(64,), dtype=torch.float32
+   7. first_bn.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+   8. stage_list.0.block_list.0.bn1.weight -> Tensor, shape=(64,), dtype=torch.float32
+   9. stage_list.0.block_list.0.bn1.bias -> Tensor, shape=(64,), dtype=torch.float32
+  10. stage_list.0.block_list.0.bn1.running_mean -> Tensor, shape=(64,), dtype=torch.float32
+  11. stage_list.0.block_list.0.bn1.running_var -> Tensor, shape=(64,), dtype=torch.float32
+  12. stage_list.0.block_list.0.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  13. stage_list.0.block_list.0.conv1.conv.weight -> Tensor, shape=(64, 64, 1), dtype=torch.float32
+  14. stage_list.0.block_list.0.conv1.conv.bias -> Tensor, shape=(64,), dtype=torch.float32
+  15. stage_list.0.block_list.0.bn2.weight -> Tensor, shape=(64,), dtype=torch.float32
+  16. stage_list.0.block_list.0.bn2.bias -> Tensor, shape=(64,), dtype=torch.float32
+  17. stage_list.0.block_list.0.bn2.running_mean -> Tensor, shape=(64,), dtype=torch.float32
+  18. stage_list.0.block_list.0.bn2.running_var -> Tensor, shape=(64,), dtype=torch.float32
+  19. stage_list.0.block_list.0.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  20. stage_list.0.block_list.0.conv2.conv.weight -> Tensor, shape=(64, 16, 16), dtype=torch.float32
+  21. stage_list.0.block_list.0.conv2.conv.bias -> Tensor, shape=(64,), dtype=torch.float32
+  22. stage_list.0.block_list.0.bn3.weight -> Tensor, shape=(64,), dtype=torch.float32
+  23. stage_list.0.block_list.0.bn3.bias -> Tensor, shape=(64,), dtype=torch.float32
+  24. stage_list.0.block_list.0.bn3.running_mean -> Tensor, shape=(64,), dtype=torch.float32
+  25. stage_list.0.block_list.0.bn3.running_var -> Tensor, shape=(64,), dtype=torch.float32
+  26. stage_list.0.block_list.0.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  27. stage_list.0.block_list.0.conv3.conv.weight -> Tensor, shape=(64, 64, 1), dtype=torch.float32
+  28. stage_list.0.block_list.0.conv3.conv.bias -> Tensor, shape=(64,), dtype=torch.float32
+  29. stage_list.0.block_list.0.se_fc1.weight -> Tensor, shape=(32, 64), dtype=torch.float32
+  30. stage_list.0.block_list.0.se_fc1.bias -> Tensor, shape=(32,), dtype=torch.float32
+  31. stage_list.0.block_list.0.se_fc2.weight -> Tensor, shape=(64, 32), dtype=torch.float32
+  32. stage_list.0.block_list.0.se_fc2.bias -> Tensor, shape=(64,), dtype=torch.float32
+  33. stage_list.0.block_list.1.bn1.weight -> Tensor, shape=(64,), dtype=torch.float32
+  34. stage_list.0.block_list.1.bn1.bias -> Tensor, shape=(64,), dtype=torch.float32
+  35. stage_list.0.block_list.1.bn1.running_mean -> Tensor, shape=(64,), dtype=torch.float32
+  36. stage_list.0.block_list.1.bn1.running_var -> Tensor, shape=(64,), dtype=torch.float32
+  37. stage_list.0.block_list.1.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  38. stage_list.0.block_list.1.conv1.conv.weight -> Tensor, shape=(64, 64, 1), dtype=torch.float32
+  39. stage_list.0.block_list.1.conv1.conv.bias -> Tensor, shape=(64,), dtype=torch.float32
+  40. stage_list.0.block_list.1.bn2.weight -> Tensor, shape=(64,), dtype=torch.float32
+  41. stage_list.0.block_list.1.bn2.bias -> Tensor, shape=(64,), dtype=torch.float32
+  42. stage_list.0.block_list.1.bn2.running_mean -> Tensor, shape=(64,), dtype=torch.float32
+  43. stage_list.0.block_list.1.bn2.running_var -> Tensor, shape=(64,), dtype=torch.float32
+  44. stage_list.0.block_list.1.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  45. stage_list.0.block_list.1.conv2.conv.weight -> Tensor, shape=(64, 16, 16), dtype=torch.float32
+  46. stage_list.0.block_list.1.conv2.conv.bias -> Tensor, shape=(64,), dtype=torch.float32
+  47. stage_list.0.block_list.1.bn3.weight -> Tensor, shape=(64,), dtype=torch.float32
+  48. stage_list.0.block_list.1.bn3.bias -> Tensor, shape=(64,), dtype=torch.float32
+  49. stage_list.0.block_list.1.bn3.running_mean -> Tensor, shape=(64,), dtype=torch.float32
+  50. stage_list.0.block_list.1.bn3.running_var -> Tensor, shape=(64,), dtype=torch.float32
+  51. stage_list.0.block_list.1.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  52. stage_list.0.block_list.1.conv3.conv.weight -> Tensor, shape=(64, 64, 1), dtype=torch.float32
+  53. stage_list.0.block_list.1.conv3.conv.bias -> Tensor, shape=(64,), dtype=torch.float32
+  54. stage_list.0.block_list.1.se_fc1.weight -> Tensor, shape=(32, 64), dtype=torch.float32
+  55. stage_list.0.block_list.1.se_fc1.bias -> Tensor, shape=(32,), dtype=torch.float32
+  56. stage_list.0.block_list.1.se_fc2.weight -> Tensor, shape=(64, 32), dtype=torch.float32
+  57. stage_list.0.block_list.1.se_fc2.bias -> Tensor, shape=(64,), dtype=torch.float32
+  58. stage_list.1.block_list.0.bn1.weight -> Tensor, shape=(64,), dtype=torch.float32
+  59. stage_list.1.block_list.0.bn1.bias -> Tensor, shape=(64,), dtype=torch.float32
+  60. stage_list.1.block_list.0.bn1.running_mean -> Tensor, shape=(64,), dtype=torch.float32
+  61. stage_list.1.block_list.0.bn1.running_var -> Tensor, shape=(64,), dtype=torch.float32
+  62. stage_list.1.block_list.0.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  63. stage_list.1.block_list.0.conv1.conv.weight -> Tensor, shape=(160, 64, 1), dtype=torch.float32
+  64. stage_list.1.block_list.0.conv1.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+  65. stage_list.1.block_list.0.bn2.weight -> Tensor, shape=(160,), dtype=torch.float32
+  66. stage_list.1.block_list.0.bn2.bias -> Tensor, shape=(160,), dtype=torch.float32
+  67. stage_list.1.block_list.0.bn2.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+  68. stage_list.1.block_list.0.bn2.running_var -> Tensor, shape=(160,), dtype=torch.float32
+  69. stage_list.1.block_list.0.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  70. stage_list.1.block_list.0.conv2.conv.weight -> Tensor, shape=(160, 16, 16), dtype=torch.float32
+  71. stage_list.1.block_list.0.conv2.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+  72. stage_list.1.block_list.0.bn3.weight -> Tensor, shape=(160,), dtype=torch.float32
+  73. stage_list.1.block_list.0.bn3.bias -> Tensor, shape=(160,), dtype=torch.float32
+  74. stage_list.1.block_list.0.bn3.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+  75. stage_list.1.block_list.0.bn3.running_var -> Tensor, shape=(160,), dtype=torch.float32
+  76. stage_list.1.block_list.0.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  77. stage_list.1.block_list.0.conv3.conv.weight -> Tensor, shape=(160, 160, 1), dtype=torch.float32
+  78. stage_list.1.block_list.0.conv3.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+  79. stage_list.1.block_list.0.se_fc1.weight -> Tensor, shape=(80, 160), dtype=torch.float32
+  80. stage_list.1.block_list.0.se_fc1.bias -> Tensor, shape=(80,), dtype=torch.float32
+  81. stage_list.1.block_list.0.se_fc2.weight -> Tensor, shape=(160, 80), dtype=torch.float32
+  82. stage_list.1.block_list.0.se_fc2.bias -> Tensor, shape=(160,), dtype=torch.float32
+  83. stage_list.1.block_list.1.bn1.weight -> Tensor, shape=(160,), dtype=torch.float32
+  84. stage_list.1.block_list.1.bn1.bias -> Tensor, shape=(160,), dtype=torch.float32
+  85. stage_list.1.block_list.1.bn1.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+  86. stage_list.1.block_list.1.bn1.running_var -> Tensor, shape=(160,), dtype=torch.float32
+  87. stage_list.1.block_list.1.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  88. stage_list.1.block_list.1.conv1.conv.weight -> Tensor, shape=(160, 160, 1), dtype=torch.float32
+  89. stage_list.1.block_list.1.conv1.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+  90. stage_list.1.block_list.1.bn2.weight -> Tensor, shape=(160,), dtype=torch.float32
+  91. stage_list.1.block_list.1.bn2.bias -> Tensor, shape=(160,), dtype=torch.float32
+  92. stage_list.1.block_list.1.bn2.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+  93. stage_list.1.block_list.1.bn2.running_var -> Tensor, shape=(160,), dtype=torch.float32
+  94. stage_list.1.block_list.1.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+  95. stage_list.1.block_list.1.conv2.conv.weight -> Tensor, shape=(160, 16, 16), dtype=torch.float32
+  96. stage_list.1.block_list.1.conv2.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+  97. stage_list.1.block_list.1.bn3.weight -> Tensor, shape=(160,), dtype=torch.float32
+  98. stage_list.1.block_list.1.bn3.bias -> Tensor, shape=(160,), dtype=torch.float32
+  99. stage_list.1.block_list.1.bn3.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+ 100. stage_list.1.block_list.1.bn3.running_var -> Tensor, shape=(160,), dtype=torch.float32
+ 101. stage_list.1.block_list.1.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 102. stage_list.1.block_list.1.conv3.conv.weight -> Tensor, shape=(160, 160, 1), dtype=torch.float32
+ 103. stage_list.1.block_list.1.conv3.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 104. stage_list.1.block_list.1.se_fc1.weight -> Tensor, shape=(80, 160), dtype=torch.float32
+ 105. stage_list.1.block_list.1.se_fc1.bias -> Tensor, shape=(80,), dtype=torch.float32
+ 106. stage_list.1.block_list.1.se_fc2.weight -> Tensor, shape=(160, 80), dtype=torch.float32
+ 107. stage_list.1.block_list.1.se_fc2.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 108. stage_list.2.block_list.0.bn1.weight -> Tensor, shape=(160,), dtype=torch.float32
+ 109. stage_list.2.block_list.0.bn1.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 110. stage_list.2.block_list.0.bn1.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+ 111. stage_list.2.block_list.0.bn1.running_var -> Tensor, shape=(160,), dtype=torch.float32
+ 112. stage_list.2.block_list.0.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 113. stage_list.2.block_list.0.conv1.conv.weight -> Tensor, shape=(160, 160, 1), dtype=torch.float32
+ 114. stage_list.2.block_list.0.conv1.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 115. stage_list.2.block_list.0.bn2.weight -> Tensor, shape=(160,), dtype=torch.float32
+ 116. stage_list.2.block_list.0.bn2.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 117. stage_list.2.block_list.0.bn2.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+ 118. stage_list.2.block_list.0.bn2.running_var -> Tensor, shape=(160,), dtype=torch.float32
+ 119. stage_list.2.block_list.0.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 120. stage_list.2.block_list.0.conv2.conv.weight -> Tensor, shape=(160, 16, 16), dtype=torch.float32
+ 121. stage_list.2.block_list.0.conv2.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 122. stage_list.2.block_list.0.bn3.weight -> Tensor, shape=(160,), dtype=torch.float32
+ 123. stage_list.2.block_list.0.bn3.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 124. stage_list.2.block_list.0.bn3.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+ 125. stage_list.2.block_list.0.bn3.running_var -> Tensor, shape=(160,), dtype=torch.float32
+ 126. stage_list.2.block_list.0.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 127. stage_list.2.block_list.0.conv3.conv.weight -> Tensor, shape=(160, 160, 1), dtype=torch.float32
+ 128. stage_list.2.block_list.0.conv3.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 129. stage_list.2.block_list.0.se_fc1.weight -> Tensor, shape=(80, 160), dtype=torch.float32
+ 130. stage_list.2.block_list.0.se_fc1.bias -> Tensor, shape=(80,), dtype=torch.float32
+ 131. stage_list.2.block_list.0.se_fc2.weight -> Tensor, shape=(160, 80), dtype=torch.float32
+ 132. stage_list.2.block_list.0.se_fc2.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 133. stage_list.2.block_list.1.bn1.weight -> Tensor, shape=(160,), dtype=torch.float32
+ 134. stage_list.2.block_list.1.bn1.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 135. stage_list.2.block_list.1.bn1.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+ 136. stage_list.2.block_list.1.bn1.running_var -> Tensor, shape=(160,), dtype=torch.float32
+ 137. stage_list.2.block_list.1.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 138. stage_list.2.block_list.1.conv1.conv.weight -> Tensor, shape=(160, 160, 1), dtype=torch.float32
+ 139. stage_list.2.block_list.1.conv1.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 140. stage_list.2.block_list.1.bn2.weight -> Tensor, shape=(160,), dtype=torch.float32
+ 141. stage_list.2.block_list.1.bn2.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 142. stage_list.2.block_list.1.bn2.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+ 143. stage_list.2.block_list.1.bn2.running_var -> Tensor, shape=(160,), dtype=torch.float32
+ 144. stage_list.2.block_list.1.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 145. stage_list.2.block_list.1.conv2.conv.weight -> Tensor, shape=(160, 16, 16), dtype=torch.float32
+ 146. stage_list.2.block_list.1.conv2.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 147. stage_list.2.block_list.1.bn3.weight -> Tensor, shape=(160,), dtype=torch.float32
+ 148. stage_list.2.block_list.1.bn3.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 149. stage_list.2.block_list.1.bn3.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+ 150. stage_list.2.block_list.1.bn3.running_var -> Tensor, shape=(160,), dtype=torch.float32
+ 151. stage_list.2.block_list.1.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 152. stage_list.2.block_list.1.conv3.conv.weight -> Tensor, shape=(160, 160, 1), dtype=torch.float32
+ 153. stage_list.2.block_list.1.conv3.conv.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 154. stage_list.2.block_list.1.se_fc1.weight -> Tensor, shape=(80, 160), dtype=torch.float32
+ 155. stage_list.2.block_list.1.se_fc1.bias -> Tensor, shape=(80,), dtype=torch.float32
+ 156. stage_list.2.block_list.1.se_fc2.weight -> Tensor, shape=(160, 80), dtype=torch.float32
+ 157. stage_list.2.block_list.1.se_fc2.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 158. stage_list.3.block_list.0.bn1.weight -> Tensor, shape=(160,), dtype=torch.float32
+ 159. stage_list.3.block_list.0.bn1.bias -> Tensor, shape=(160,), dtype=torch.float32
+ 160. stage_list.3.block_list.0.bn1.running_mean -> Tensor, shape=(160,), dtype=torch.float32
+ 161. stage_list.3.block_list.0.bn1.running_var -> Tensor, shape=(160,), dtype=torch.float32
+ 162. stage_list.3.block_list.0.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 163. stage_list.3.block_list.0.conv1.conv.weight -> Tensor, shape=(400, 160, 1), dtype=torch.float32
+ 164. stage_list.3.block_list.0.conv1.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 165. stage_list.3.block_list.0.bn2.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 166. stage_list.3.block_list.0.bn2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 167. stage_list.3.block_list.0.bn2.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 168. stage_list.3.block_list.0.bn2.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 169. stage_list.3.block_list.0.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 170. stage_list.3.block_list.0.conv2.conv.weight -> Tensor, shape=(400, 16, 16), dtype=torch.float32
+ 171. stage_list.3.block_list.0.conv2.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 172. stage_list.3.block_list.0.bn3.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 173. stage_list.3.block_list.0.bn3.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 174. stage_list.3.block_list.0.bn3.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 175. stage_list.3.block_list.0.bn3.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 176. stage_list.3.block_list.0.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 177. stage_list.3.block_list.0.conv3.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 178. stage_list.3.block_list.0.conv3.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 179. stage_list.3.block_list.0.se_fc1.weight -> Tensor, shape=(200, 400), dtype=torch.float32
+ 180. stage_list.3.block_list.0.se_fc1.bias -> Tensor, shape=(200,), dtype=torch.float32
+ 181. stage_list.3.block_list.0.se_fc2.weight -> Tensor, shape=(400, 200), dtype=torch.float32
+ 182. stage_list.3.block_list.0.se_fc2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 183. stage_list.3.block_list.1.bn1.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 184. stage_list.3.block_list.1.bn1.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 185. stage_list.3.block_list.1.bn1.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 186. stage_list.3.block_list.1.bn1.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 187. stage_list.3.block_list.1.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 188. stage_list.3.block_list.1.conv1.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 189. stage_list.3.block_list.1.conv1.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 190. stage_list.3.block_list.1.bn2.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 191. stage_list.3.block_list.1.bn2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 192. stage_list.3.block_list.1.bn2.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 193. stage_list.3.block_list.1.bn2.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 194. stage_list.3.block_list.1.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 195. stage_list.3.block_list.1.conv2.conv.weight -> Tensor, shape=(400, 16, 16), dtype=torch.float32
+ 196. stage_list.3.block_list.1.conv2.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 197. stage_list.3.block_list.1.bn3.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 198. stage_list.3.block_list.1.bn3.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 199. stage_list.3.block_list.1.bn3.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 200. stage_list.3.block_list.1.bn3.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 201. stage_list.3.block_list.1.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 202. stage_list.3.block_list.1.conv3.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 203. stage_list.3.block_list.1.conv3.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 204. stage_list.3.block_list.1.se_fc1.weight -> Tensor, shape=(200, 400), dtype=torch.float32
+ 205. stage_list.3.block_list.1.se_fc1.bias -> Tensor, shape=(200,), dtype=torch.float32
+ 206. stage_list.3.block_list.1.se_fc2.weight -> Tensor, shape=(400, 200), dtype=torch.float32
+ 207. stage_list.3.block_list.1.se_fc2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 208. stage_list.3.block_list.2.bn1.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 209. stage_list.3.block_list.2.bn1.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 210. stage_list.3.block_list.2.bn1.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 211. stage_list.3.block_list.2.bn1.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 212. stage_list.3.block_list.2.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 213. stage_list.3.block_list.2.conv1.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 214. stage_list.3.block_list.2.conv1.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 215. stage_list.3.block_list.2.bn2.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 216. stage_list.3.block_list.2.bn2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 217. stage_list.3.block_list.2.bn2.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 218. stage_list.3.block_list.2.bn2.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 219. stage_list.3.block_list.2.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 220. stage_list.3.block_list.2.conv2.conv.weight -> Tensor, shape=(400, 16, 16), dtype=torch.float32
+ 221. stage_list.3.block_list.2.conv2.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 222. stage_list.3.block_list.2.bn3.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 223. stage_list.3.block_list.2.bn3.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 224. stage_list.3.block_list.2.bn3.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 225. stage_list.3.block_list.2.bn3.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 226. stage_list.3.block_list.2.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 227. stage_list.3.block_list.2.conv3.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 228. stage_list.3.block_list.2.conv3.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 229. stage_list.3.block_list.2.se_fc1.weight -> Tensor, shape=(200, 400), dtype=torch.float32
+ 230. stage_list.3.block_list.2.se_fc1.bias -> Tensor, shape=(200,), dtype=torch.float32
+ 231. stage_list.3.block_list.2.se_fc2.weight -> Tensor, shape=(400, 200), dtype=torch.float32
+ 232. stage_list.3.block_list.2.se_fc2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 233. stage_list.4.block_list.0.bn1.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 234. stage_list.4.block_list.0.bn1.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 235. stage_list.4.block_list.0.bn1.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 236. stage_list.4.block_list.0.bn1.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 237. stage_list.4.block_list.0.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 238. stage_list.4.block_list.0.conv1.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 239. stage_list.4.block_list.0.conv1.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 240. stage_list.4.block_list.0.bn2.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 241. stage_list.4.block_list.0.bn2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 242. stage_list.4.block_list.0.bn2.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 243. stage_list.4.block_list.0.bn2.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 244. stage_list.4.block_list.0.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 245. stage_list.4.block_list.0.conv2.conv.weight -> Tensor, shape=(400, 16, 16), dtype=torch.float32
+ 246. stage_list.4.block_list.0.conv2.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 247. stage_list.4.block_list.0.bn3.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 248. stage_list.4.block_list.0.bn3.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 249. stage_list.4.block_list.0.bn3.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 250. stage_list.4.block_list.0.bn3.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 251. stage_list.4.block_list.0.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 252. stage_list.4.block_list.0.conv3.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 253. stage_list.4.block_list.0.conv3.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 254. stage_list.4.block_list.0.se_fc1.weight -> Tensor, shape=(200, 400), dtype=torch.float32
+ 255. stage_list.4.block_list.0.se_fc1.bias -> Tensor, shape=(200,), dtype=torch.float32
+ 256. stage_list.4.block_list.0.se_fc2.weight -> Tensor, shape=(400, 200), dtype=torch.float32
+ 257. stage_list.4.block_list.0.se_fc2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 258. stage_list.4.block_list.1.bn1.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 259. stage_list.4.block_list.1.bn1.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 260. stage_list.4.block_list.1.bn1.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 261. stage_list.4.block_list.1.bn1.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 262. stage_list.4.block_list.1.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 263. stage_list.4.block_list.1.conv1.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 264. stage_list.4.block_list.1.conv1.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 265. stage_list.4.block_list.1.bn2.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 266. stage_list.4.block_list.1.bn2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 267. stage_list.4.block_list.1.bn2.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 268. stage_list.4.block_list.1.bn2.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 269. stage_list.4.block_list.1.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 270. stage_list.4.block_list.1.conv2.conv.weight -> Tensor, shape=(400, 16, 16), dtype=torch.float32
+ 271. stage_list.4.block_list.1.conv2.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 272. stage_list.4.block_list.1.bn3.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 273. stage_list.4.block_list.1.bn3.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 274. stage_list.4.block_list.1.bn3.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 275. stage_list.4.block_list.1.bn3.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 276. stage_list.4.block_list.1.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 277. stage_list.4.block_list.1.conv3.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 278. stage_list.4.block_list.1.conv3.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 279. stage_list.4.block_list.1.se_fc1.weight -> Tensor, shape=(200, 400), dtype=torch.float32
+ 280. stage_list.4.block_list.1.se_fc1.bias -> Tensor, shape=(200,), dtype=torch.float32
+ 281. stage_list.4.block_list.1.se_fc2.weight -> Tensor, shape=(400, 200), dtype=torch.float32
+ 282. stage_list.4.block_list.1.se_fc2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 283. stage_list.4.block_list.2.bn1.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 284. stage_list.4.block_list.2.bn1.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 285. stage_list.4.block_list.2.bn1.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 286. stage_list.4.block_list.2.bn1.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 287. stage_list.4.block_list.2.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 288. stage_list.4.block_list.2.conv1.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 289. stage_list.4.block_list.2.conv1.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 290. stage_list.4.block_list.2.bn2.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 291. stage_list.4.block_list.2.bn2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 292. stage_list.4.block_list.2.bn2.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 293. stage_list.4.block_list.2.bn2.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 294. stage_list.4.block_list.2.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 295. stage_list.4.block_list.2.conv2.conv.weight -> Tensor, shape=(400, 16, 16), dtype=torch.float32
+ 296. stage_list.4.block_list.2.conv2.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 297. stage_list.4.block_list.2.bn3.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 298. stage_list.4.block_list.2.bn3.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 299. stage_list.4.block_list.2.bn3.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 300. stage_list.4.block_list.2.bn3.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 301. stage_list.4.block_list.2.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 302. stage_list.4.block_list.2.conv3.conv.weight -> Tensor, shape=(400, 400, 1), dtype=torch.float32
+ 303. stage_list.4.block_list.2.conv3.conv.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 304. stage_list.4.block_list.2.se_fc1.weight -> Tensor, shape=(200, 400), dtype=torch.float32
+ 305. stage_list.4.block_list.2.se_fc1.bias -> Tensor, shape=(200,), dtype=torch.float32
+ 306. stage_list.4.block_list.2.se_fc2.weight -> Tensor, shape=(400, 200), dtype=torch.float32
+ 307. stage_list.4.block_list.2.se_fc2.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 308. stage_list.5.block_list.0.bn1.weight -> Tensor, shape=(400,), dtype=torch.float32
+ 309. stage_list.5.block_list.0.bn1.bias -> Tensor, shape=(400,), dtype=torch.float32
+ 310. stage_list.5.block_list.0.bn1.running_mean -> Tensor, shape=(400,), dtype=torch.float32
+ 311. stage_list.5.block_list.0.bn1.running_var -> Tensor, shape=(400,), dtype=torch.float32
+ 312. stage_list.5.block_list.0.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 313. stage_list.5.block_list.0.conv1.conv.weight -> Tensor, shape=(1024, 400, 1), dtype=torch.float32
+ 314. stage_list.5.block_list.0.conv1.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 315. stage_list.5.block_list.0.bn2.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 316. stage_list.5.block_list.0.bn2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 317. stage_list.5.block_list.0.bn2.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 318. stage_list.5.block_list.0.bn2.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 319. stage_list.5.block_list.0.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 320. stage_list.5.block_list.0.conv2.conv.weight -> Tensor, shape=(1024, 16, 16), dtype=torch.float32
+ 321. stage_list.5.block_list.0.conv2.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 322. stage_list.5.block_list.0.bn3.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 323. stage_list.5.block_list.0.bn3.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 324. stage_list.5.block_list.0.bn3.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 325. stage_list.5.block_list.0.bn3.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 326. stage_list.5.block_list.0.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 327. stage_list.5.block_list.0.conv3.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 328. stage_list.5.block_list.0.conv3.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 329. stage_list.5.block_list.0.se_fc1.weight -> Tensor, shape=(512, 1024), dtype=torch.float32
+ 330. stage_list.5.block_list.0.se_fc1.bias -> Tensor, shape=(512,), dtype=torch.float32
+ 331. stage_list.5.block_list.0.se_fc2.weight -> Tensor, shape=(1024, 512), dtype=torch.float32
+ 332. stage_list.5.block_list.0.se_fc2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 333. stage_list.5.block_list.1.bn1.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 334. stage_list.5.block_list.1.bn1.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 335. stage_list.5.block_list.1.bn1.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 336. stage_list.5.block_list.1.bn1.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 337. stage_list.5.block_list.1.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 338. stage_list.5.block_list.1.conv1.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 339. stage_list.5.block_list.1.conv1.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 340. stage_list.5.block_list.1.bn2.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 341. stage_list.5.block_list.1.bn2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 342. stage_list.5.block_list.1.bn2.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 343. stage_list.5.block_list.1.bn2.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 344. stage_list.5.block_list.1.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 345. stage_list.5.block_list.1.conv2.conv.weight -> Tensor, shape=(1024, 16, 16), dtype=torch.float32
+ 346. stage_list.5.block_list.1.conv2.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 347. stage_list.5.block_list.1.bn3.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 348. stage_list.5.block_list.1.bn3.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 349. stage_list.5.block_list.1.bn3.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 350. stage_list.5.block_list.1.bn3.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 351. stage_list.5.block_list.1.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 352. stage_list.5.block_list.1.conv3.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 353. stage_list.5.block_list.1.conv3.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 354. stage_list.5.block_list.1.se_fc1.weight -> Tensor, shape=(512, 1024), dtype=torch.float32
+ 355. stage_list.5.block_list.1.se_fc1.bias -> Tensor, shape=(512,), dtype=torch.float32
+ 356. stage_list.5.block_list.1.se_fc2.weight -> Tensor, shape=(1024, 512), dtype=torch.float32
+ 357. stage_list.5.block_list.1.se_fc2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 358. stage_list.5.block_list.2.bn1.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 359. stage_list.5.block_list.2.bn1.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 360. stage_list.5.block_list.2.bn1.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 361. stage_list.5.block_list.2.bn1.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 362. stage_list.5.block_list.2.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 363. stage_list.5.block_list.2.conv1.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 364. stage_list.5.block_list.2.conv1.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 365. stage_list.5.block_list.2.bn2.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 366. stage_list.5.block_list.2.bn2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 367. stage_list.5.block_list.2.bn2.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 368. stage_list.5.block_list.2.bn2.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 369. stage_list.5.block_list.2.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 370. stage_list.5.block_list.2.conv2.conv.weight -> Tensor, shape=(1024, 16, 16), dtype=torch.float32
+ 371. stage_list.5.block_list.2.conv2.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 372. stage_list.5.block_list.2.bn3.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 373. stage_list.5.block_list.2.bn3.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 374. stage_list.5.block_list.2.bn3.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 375. stage_list.5.block_list.2.bn3.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 376. stage_list.5.block_list.2.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 377. stage_list.5.block_list.2.conv3.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 378. stage_list.5.block_list.2.conv3.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 379. stage_list.5.block_list.2.se_fc1.weight -> Tensor, shape=(512, 1024), dtype=torch.float32
+ 380. stage_list.5.block_list.2.se_fc1.bias -> Tensor, shape=(512,), dtype=torch.float32
+ 381. stage_list.5.block_list.2.se_fc2.weight -> Tensor, shape=(1024, 512), dtype=torch.float32
+ 382. stage_list.5.block_list.2.se_fc2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 383. stage_list.5.block_list.3.bn1.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 384. stage_list.5.block_list.3.bn1.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 385. stage_list.5.block_list.3.bn1.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 386. stage_list.5.block_list.3.bn1.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 387. stage_list.5.block_list.3.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 388. stage_list.5.block_list.3.conv1.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 389. stage_list.5.block_list.3.conv1.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 390. stage_list.5.block_list.3.bn2.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 391. stage_list.5.block_list.3.bn2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 392. stage_list.5.block_list.3.bn2.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 393. stage_list.5.block_list.3.bn2.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 394. stage_list.5.block_list.3.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 395. stage_list.5.block_list.3.conv2.conv.weight -> Tensor, shape=(1024, 16, 16), dtype=torch.float32
+ 396. stage_list.5.block_list.3.conv2.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 397. stage_list.5.block_list.3.bn3.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 398. stage_list.5.block_list.3.bn3.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 399. stage_list.5.block_list.3.bn3.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 400. stage_list.5.block_list.3.bn3.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 401. stage_list.5.block_list.3.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 402. stage_list.5.block_list.3.conv3.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 403. stage_list.5.block_list.3.conv3.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 404. stage_list.5.block_list.3.se_fc1.weight -> Tensor, shape=(512, 1024), dtype=torch.float32
+ 405. stage_list.5.block_list.3.se_fc1.bias -> Tensor, shape=(512,), dtype=torch.float32
+ 406. stage_list.5.block_list.3.se_fc2.weight -> Tensor, shape=(1024, 512), dtype=torch.float32
+ 407. stage_list.5.block_list.3.se_fc2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 408. stage_list.6.block_list.0.bn1.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 409. stage_list.6.block_list.0.bn1.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 410. stage_list.6.block_list.0.bn1.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 411. stage_list.6.block_list.0.bn1.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 412. stage_list.6.block_list.0.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 413. stage_list.6.block_list.0.conv1.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 414. stage_list.6.block_list.0.conv1.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 415. stage_list.6.block_list.0.bn2.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 416. stage_list.6.block_list.0.bn2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 417. stage_list.6.block_list.0.bn2.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 418. stage_list.6.block_list.0.bn2.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 419. stage_list.6.block_list.0.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 420. stage_list.6.block_list.0.conv2.conv.weight -> Tensor, shape=(1024, 16, 16), dtype=torch.float32
+ 421. stage_list.6.block_list.0.conv2.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 422. stage_list.6.block_list.0.bn3.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 423. stage_list.6.block_list.0.bn3.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 424. stage_list.6.block_list.0.bn3.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 425. stage_list.6.block_list.0.bn3.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 426. stage_list.6.block_list.0.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 427. stage_list.6.block_list.0.conv3.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 428. stage_list.6.block_list.0.conv3.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 429. stage_list.6.block_list.0.se_fc1.weight -> Tensor, shape=(512, 1024), dtype=torch.float32
+ 430. stage_list.6.block_list.0.se_fc1.bias -> Tensor, shape=(512,), dtype=torch.float32
+ 431. stage_list.6.block_list.0.se_fc2.weight -> Tensor, shape=(1024, 512), dtype=torch.float32
+ 432. stage_list.6.block_list.0.se_fc2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 433. stage_list.6.block_list.1.bn1.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 434. stage_list.6.block_list.1.bn1.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 435. stage_list.6.block_list.1.bn1.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 436. stage_list.6.block_list.1.bn1.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 437. stage_list.6.block_list.1.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 438. stage_list.6.block_list.1.conv1.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 439. stage_list.6.block_list.1.conv1.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 440. stage_list.6.block_list.1.bn2.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 441. stage_list.6.block_list.1.bn2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 442. stage_list.6.block_list.1.bn2.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 443. stage_list.6.block_list.1.bn2.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 444. stage_list.6.block_list.1.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 445. stage_list.6.block_list.1.conv2.conv.weight -> Tensor, shape=(1024, 16, 16), dtype=torch.float32
+ 446. stage_list.6.block_list.1.conv2.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 447. stage_list.6.block_list.1.bn3.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 448. stage_list.6.block_list.1.bn3.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 449. stage_list.6.block_list.1.bn3.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 450. stage_list.6.block_list.1.bn3.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 451. stage_list.6.block_list.1.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 452. stage_list.6.block_list.1.conv3.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 453. stage_list.6.block_list.1.conv3.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 454. stage_list.6.block_list.1.se_fc1.weight -> Tensor, shape=(512, 1024), dtype=torch.float32
+ 455. stage_list.6.block_list.1.se_fc1.bias -> Tensor, shape=(512,), dtype=torch.float32
+ 456. stage_list.6.block_list.1.se_fc2.weight -> Tensor, shape=(1024, 512), dtype=torch.float32
+ 457. stage_list.6.block_list.1.se_fc2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 458. stage_list.6.block_list.2.bn1.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 459. stage_list.6.block_list.2.bn1.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 460. stage_list.6.block_list.2.bn1.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 461. stage_list.6.block_list.2.bn1.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 462. stage_list.6.block_list.2.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 463. stage_list.6.block_list.2.conv1.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 464. stage_list.6.block_list.2.conv1.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 465. stage_list.6.block_list.2.bn2.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 466. stage_list.6.block_list.2.bn2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 467. stage_list.6.block_list.2.bn2.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 468. stage_list.6.block_list.2.bn2.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 469. stage_list.6.block_list.2.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 470. stage_list.6.block_list.2.conv2.conv.weight -> Tensor, shape=(1024, 16, 16), dtype=torch.float32
+ 471. stage_list.6.block_list.2.conv2.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 472. stage_list.6.block_list.2.bn3.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 473. stage_list.6.block_list.2.bn3.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 474. stage_list.6.block_list.2.bn3.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 475. stage_list.6.block_list.2.bn3.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 476. stage_list.6.block_list.2.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 477. stage_list.6.block_list.2.conv3.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 478. stage_list.6.block_list.2.conv3.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 479. stage_list.6.block_list.2.se_fc1.weight -> Tensor, shape=(512, 1024), dtype=torch.float32
+ 480. stage_list.6.block_list.2.se_fc1.bias -> Tensor, shape=(512,), dtype=torch.float32
+ 481. stage_list.6.block_list.2.se_fc2.weight -> Tensor, shape=(1024, 512), dtype=torch.float32
+ 482. stage_list.6.block_list.2.se_fc2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 483. stage_list.6.block_list.3.bn1.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 484. stage_list.6.block_list.3.bn1.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 485. stage_list.6.block_list.3.bn1.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 486. stage_list.6.block_list.3.bn1.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 487. stage_list.6.block_list.3.bn1.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 488. stage_list.6.block_list.3.conv1.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 489. stage_list.6.block_list.3.conv1.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 490. stage_list.6.block_list.3.bn2.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 491. stage_list.6.block_list.3.bn2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 492. stage_list.6.block_list.3.bn2.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 493. stage_list.6.block_list.3.bn2.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 494. stage_list.6.block_list.3.bn2.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 495. stage_list.6.block_list.3.conv2.conv.weight -> Tensor, shape=(1024, 16, 16), dtype=torch.float32
+ 496. stage_list.6.block_list.3.conv2.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 497. stage_list.6.block_list.3.bn3.weight -> Tensor, shape=(1024,), dtype=torch.float32
+ 498. stage_list.6.block_list.3.bn3.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 499. stage_list.6.block_list.3.bn3.running_mean -> Tensor, shape=(1024,), dtype=torch.float32
+ 500. stage_list.6.block_list.3.bn3.running_var -> Tensor, shape=(1024,), dtype=torch.float32
+ 501. stage_list.6.block_list.3.bn3.num_batches_tracked -> Tensor, shape=(), dtype=torch.int64
+ 502. stage_list.6.block_list.3.conv3.conv.weight -> Tensor, shape=(1024, 1024, 1), dtype=torch.float32
+ 503. stage_list.6.block_list.3.conv3.conv.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 504. stage_list.6.block_list.3.se_fc1.weight -> Tensor, shape=(512, 1024), dtype=torch.float32
+ 505. stage_list.6.block_list.3.se_fc1.bias -> Tensor, shape=(512,), dtype=torch.float32
+ 506. stage_list.6.block_list.3.se_fc2.weight -> Tensor, shape=(1024, 512), dtype=torch.float32
+ 507. stage_list.6.block_list.3.se_fc2.bias -> Tensor, shape=(1024,), dtype=torch.float32
+ 508. dense.weight -> Tensor, shape=(150, 1024), dtype=torch.float32
+ 509. dense.bias -> Tensor, shape=(150,), dtype=torch.float32

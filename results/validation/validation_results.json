@@ -1,0 +1,11 @@
+{
+  "onnx_path": "D:\\Project\\ECG\\ECGFounder\\onnx_models\\ecg_founder_12lead.onnx",
+  "file_size_mb": 117.83874702453613,
+  "validation": {
+    "max_abs": 0.2491769790649414,
+    "mean_abs": 0.0452825129032135,
+    "all_close": false,
+    "rtol": 1e-05,
+    "atol": 1e-05
+  }
+}

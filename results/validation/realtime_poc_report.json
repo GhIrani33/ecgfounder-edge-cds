@@ -1,0 +1,2141 @@
+{
+  "experiment": "Real-Time ECG Streaming Proof-of-Concept",
+  "configuration": {
+    "model": "D:\\Project\\ECG\\ECGFounder\\onnx_models\\ecg_founder_all71.onnx",
+    "num_windows_requested": 50,
+    "num_windows_processed": 50,
+    "qc_failures": 0,
+    "preprocessing": "0.5-50 Hz bandpass + adaptive 50Hz notch + z-score"
+  },
+  "latency_statistics_ms": {
+    "preprocessing": {
+      "mean": 7.528250010218471,
+      "median": 7.126000011339784,
+      "std": 1.707525421823366,
+      "min": 5.586300045251846,
+      "max": 11.840900056995451,
+      "p95": 11.010480037657544,
+      "p99": 11.672682974021882
+    },
+    "inference": {
+      "mean": 54.76075199665502,
+      "median": 52.30574996676296,
+      "std": 7.191800195003128,
+      "min": 45.43639998883009,
+      "max": 70.98840002436191,
+      "p95": 68.48212499753572,
+      "p99": 70.20038201357238
+    },
+    "total": {
+      "mean": 62.28900200687349,
+      "median": 59.95770002482459,
+      "std": 8.084023431003526,
+      "min": 51.17919994518161,
+      "max": 78.44890002161264,
+      "p95": 76.93599510821514,
+      "p99": 78.37789899436757
+    }
+  },
+  "windows": [
+    {
+      "window_id": 1,
+      "record_id": "00009_hr",
+      "latency_ms": {
+        "preprocessing": 8.19,
+        "inference": 51.47,
+        "total": 59.66
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9921863079071045,
+          "logit": 4.8440351486206055
+        },
+        {
+          "label": "SR",
+          "probability": 0.6875243782997131,
+          "logit": 0.788570761680603
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.5645948648452759,
+          "logit": 0.2598312199115753
+        },
+        {
+          "label": "SVARR",
+          "probability": 0.5525973439216614,
+          "logit": 0.21117065846920013
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.4671344459056854,
+          "logit": -0.1316518783569336
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.4812595694438688
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00009_hr.npy"
+    },
+    {
+      "window_id": 2,
+      "record_id": "00038_hr",
+      "latency_ms": {
+        "preprocessing": 6.53,
+        "inference": 47.09,
+        "total": 53.62
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.8773843050003052,
+          "logit": 1.9678901433944702
+        },
+        {
+          "label": "LAFB",
+          "probability": 0.8630004525184631,
+          "logit": 1.8404381275177002
+        },
+        {
+          "label": "SR",
+          "probability": 0.6907498240470886,
+          "logit": 0.8036268949508667
+        },
+        {
+          "label": "LVOLT",
+          "probability": 0.6764784455299377,
+          "logit": 0.7376347780227661
+        },
+        {
+          "label": "LMI",
+          "probability": 0.4423360526561737,
+          "logit": -0.23168665170669556
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -2.507802088213831
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00038_hr.npy"
+    },
+    {
+      "window_id": 3,
+      "record_id": "00040_hr",
+      "latency_ms": {
+        "preprocessing": 6.14,
+        "inference": 64.65,
+        "total": 70.79
+      },
+      "top5_diagnoses": [
+        {
+          "label": "SR",
+          "probability": 0.9261006712913513,
+          "logit": 2.5282788276672363
+        },
+        {
+          "label": "NORM",
+          "probability": 0.8995550274848938,
+          "logit": 2.1922898292541504
+        },
+        {
+          "label": "LPR",
+          "probability": 0.6572423577308655,
+          "logit": 0.6510294079780579
+        },
+        {
+          "label": "1AVB",
+          "probability": 0.6075913310050964,
+          "logit": 0.4371987581253052
+        },
+        {
+          "label": "IVCD",
+          "probability": 0.44527968764305115,
+          "logit": -0.21976152062416077
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.7221027061890692
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00040_hr.npy"
+    },
+    {
+      "window_id": 4,
+      "record_id": "00057_hr",
+      "latency_ms": {
+        "preprocessing": 7.14,
+        "inference": 56.73,
+        "total": 63.87
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9889768958091736,
+          "logit": 4.4966816902160645
+        },
+        {
+          "label": "SR",
+          "probability": 0.8766241073608398,
+          "logit": 1.9608428478240967
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.2856922745704651,
+          "logit": -0.9163985252380371
+        },
+        {
+          "label": "ABQRS",
+          "probability": 0.27502837777137756,
+          "logit": -0.969258189201355
+        },
+        {
+          "label": "LVOLT",
+          "probability": 0.22721588611602783,
+          "logit": -1.2240991592407227
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 0.41566001879831405
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00057_hr.npy"
+    },
+    {
+      "window_id": 5,
+      "record_id": "00059_hr",
+      "latency_ms": {
+        "preprocessing": 11.05,
+        "inference": 62.27,
+        "total": 73.33
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.8798823356628418,
+          "logit": 1.9913160800933838
+        },
+        {
+          "label": "IRBBB",
+          "probability": 0.8181573152542114,
+          "logit": 1.5039126873016357
+        },
+        {
+          "label": "LPFB",
+          "probability": 0.7171021103858948,
+          "logit": 0.9301320910453796
+        },
+        {
+          "label": "SR",
+          "probability": 0.6098158359527588,
+          "logit": 0.44653820991516113
+        },
+        {
+          "label": "ABQRS",
+          "probability": 0.5000974535942078,
+          "logit": 0.000389784574508667
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -1.3451769447812105
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00059_hr.npy"
+    },
+    {
+      "window_id": 6,
+      "record_id": "00063_hr",
+      "latency_ms": {
+        "preprocessing": 8.26,
+        "inference": 51.06,
+        "total": 59.32
+      },
+      "top5_diagnoses": [
+        {
+          "label": "ABQRS",
+          "probability": 0.9324977397918701,
+          "logit": 2.6257050037384033
+        },
+        {
+          "label": "ASMI",
+          "probability": 0.8682124614715576,
+          "logit": 1.8852458000183105
+        },
+        {
+          "label": "AMI",
+          "probability": 0.829121470451355,
+          "logit": 1.5794137716293335
+        },
+        {
+          "label": "SVARR",
+          "probability": 0.7561444640159607,
+          "logit": 1.131656527519226
+        },
+        {
+          "label": "IRBBB",
+          "probability": 0.7058069109916687,
+          "logit": 0.8751052618026733
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 1.3799768264545578
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00063_hr.npy"
+    },
+    {
+      "window_id": 7,
+      "record_id": "00065_hr",
+      "latency_ms": {
+        "preprocessing": 7.54,
+        "inference": 51.56,
+        "total": 59.1
+      },
+      "top5_diagnoses": [
+        {
+          "label": "IRBBB",
+          "probability": 0.9913225173950195,
+          "logit": 4.738311767578125
+        },
+        {
+          "label": "NORM",
+          "probability": 0.990134060382843,
+          "logit": 4.6087493896484375
+        },
+        {
+          "label": "SR",
+          "probability": 0.9394246935844421,
+          "logit": 2.741379737854004
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.41836783289909363,
+          "logit": -0.3294771909713745
+        },
+        {
+          "label": "SVARR",
+          "probability": 0.3542785346508026,
+          "logit": -0.60028475522995
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -1.2979912271104541
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00065_hr.npy"
+    },
+    {
+      "window_id": 8,
+      "record_id": "00075_hr",
+      "latency_ms": {
+        "preprocessing": 11.5,
+        "inference": 60.97,
+        "total": 72.47
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9864380359649658,
+          "logit": 4.286834239959717
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.75428706407547,
+          "logit": 1.1216089725494385
+        },
+        {
+          "label": "LMI",
+          "probability": 0.6793192028999329,
+          "logit": 0.7506448030471802
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.6191734671592712,
+          "logit": 0.4860416054725647
+        },
+        {
+          "label": "SVARR",
+          "probability": 0.4284284710884094,
+          "logit": -0.2882658839225769
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 0.4632666571583617
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00075_hr.npy"
+    },
+    {
+      "window_id": 9,
+      "record_id": "00076_hr",
+      "latency_ms": {
+        "preprocessing": 8.32,
+        "inference": 52.54,
+        "total": 60.86
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9908175468444824,
+          "logit": 4.6812310218811035
+        },
+        {
+          "label": "IRBBB",
+          "probability": 0.9309626221656799,
+          "logit": 2.6015703678131104
+        },
+        {
+          "label": "SR",
+          "probability": 0.9227311611175537,
+          "logit": 2.4800477027893066
+        },
+        {
+          "label": "TAB_",
+          "probability": 0.7624726295471191,
+          "logit": 1.1662837266921997
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.5821154713630676,
+          "logit": 0.3314637839794159
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 6.538884281515345
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00076_hr.npy"
+    },
+    {
+      "window_id": 10,
+      "record_id": "00079_hr",
+      "latency_ms": {
+        "preprocessing": 8.17,
+        "inference": 55.84,
+        "total": 64.01
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9849634766578674,
+          "logit": 4.182126045227051
+        },
+        {
+          "label": "IRBBB",
+          "probability": 0.9567931294441223,
+          "logit": 3.097587823867798
+        },
+        {
+          "label": "SR",
+          "probability": 0.8160574436187744,
+          "logit": 1.489861249923706
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.6005551815032959,
+          "logit": 0.40777885913848877
+        },
+        {
+          "label": "ABQRS",
+          "probability": 0.22284723818302155,
+          "logit": -1.2491505146026611
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -1.0668577422820493
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00079_hr.npy"
+    },
+    {
+      "window_id": 11,
+      "record_id": "00093_hr",
+      "latency_ms": {
+        "preprocessing": 11.84,
+        "inference": 65.05,
+        "total": 76.89
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9937272071838379,
+          "logit": 5.065249919891357
+        },
+        {
+          "label": "SR",
+          "probability": 0.8962798714637756,
+          "logit": 2.156557083129883
+        },
+        {
+          "label": "WPW",
+          "probability": 0.6100751757621765,
+          "logit": 0.4476282596588135
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.40417373180389404,
+          "logit": -0.3881044387817383
+        },
+        {
+          "label": "ABQRS",
+          "probability": 0.1855701208114624,
+          "logit": -1.4790555238723755
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -1.3553960147316266
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00093_hr.npy"
+    },
+    {
+      "window_id": 12,
+      "record_id": "00100_hr",
+      "latency_ms": {
+        "preprocessing": 8.71,
+        "inference": 68.26,
+        "total": 76.97
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9894982576370239,
+          "logit": 4.545661926269531
+        },
+        {
+          "label": "SR",
+          "probability": 0.9182149767875671,
+          "logit": 2.4183363914489746
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.6886614561080933,
+          "logit": 0.793868899345398
+        },
+        {
+          "label": "IRBBB",
+          "probability": 0.14652760326862335,
+          "logit": -1.7620995044708252
+        },
+        {
+          "label": "LAFB",
+          "probability": 0.11920531839132309,
+          "logit": -1.9999771118164062
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -2.6480039891616554
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00100_hr.npy"
+    },
+    {
+      "window_id": 13,
+      "record_id": "00112_hr",
+      "latency_ms": {
+        "preprocessing": 8.78,
+        "inference": 51.47,
+        "total": 60.25
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9289878606796265,
+          "logit": 2.571244239807129
+        },
+        {
+          "label": "SR",
+          "probability": 0.923254668712616,
+          "logit": 2.487412691116333
+        },
+        {
+          "label": "LAFB",
+          "probability": 0.5448393225669861,
+          "logit": 0.17984050512313843
+        },
+        {
+          "label": "RAO/RAE",
+          "probability": 0.457468181848526,
+          "logit": -0.1705392599105835
+        },
+        {
+          "label": "LMI",
+          "probability": 0.4285065233707428,
+          "logit": -0.28794723749160767
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 0.13499689544247084
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00112_hr.npy"
+    },
+    {
+      "window_id": 14,
+      "record_id": "00115_hr",
+      "latency_ms": {
+        "preprocessing": 10.26,
+        "inference": 54.77,
+        "total": 65.03
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9936477541923523,
+          "logit": 5.052574157714844
+        },
+        {
+          "label": "SR",
+          "probability": 0.8208091259002686,
+          "logit": 1.5218391418457031
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.4743632674217224,
+          "logit": -0.10263699293136597
+        },
+        {
+          "label": "LVOLT",
+          "probability": 0.18850095570087433,
+          "logit": -1.4597800970077515
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.18658404052257538,
+          "logit": -1.4723608493804932
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.6189111019773326
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00115_hr.npy"
+    },
+    {
+      "window_id": 15,
+      "record_id": "00116_hr",
+      "latency_ms": {
+        "preprocessing": 5.97,
+        "inference": 48.23,
+        "total": 54.2
+      },
+      "top5_diagnoses": [
+        {
+          "label": "SR",
+          "probability": 0.9574554562568665,
+          "logit": 3.113727331161499
+        },
+        {
+          "label": "NORM",
+          "probability": 0.8918193578720093,
+          "logit": 2.1094613075256348
+        },
+        {
+          "label": "LNGQT",
+          "probability": 0.7319983243942261,
+          "logit": 1.0047849416732788
+        },
+        {
+          "label": "EL",
+          "probability": 0.49493730068206787,
+          "logit": -0.02025139331817627
+        },
+        {
+          "label": "NDT",
+          "probability": 0.4670701026916504,
+          "logit": -0.13191047310829163
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -3.0370058758904
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00116_hr.npy"
+    },
+    {
+      "window_id": 16,
+      "record_id": "00117_hr",
+      "latency_ms": {
+        "preprocessing": 6.46,
+        "inference": 47.91,
+        "total": 54.37
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9201964139938354,
+          "logit": 2.4450182914733887
+        },
+        {
+          "label": "SR",
+          "probability": 0.8152914047241211,
+          "logit": 1.484765887260437
+        },
+        {
+          "label": "NDT",
+          "probability": 0.5798577070236206,
+          "logit": 0.32218942046165466
+        },
+        {
+          "label": "RAO/RAE",
+          "probability": 0.5258426666259766,
+          "logit": 0.10346270352602005
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.33838486671447754,
+          "logit": -0.6705001592636108
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -2.7865586903995343
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00117_hr.npy"
+    },
+    {
+      "window_id": 17,
+      "record_id": "00119_hr",
+      "latency_ms": {
+        "preprocessing": 5.67,
+        "inference": 45.51,
+        "total": 51.18
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9913749098777771,
+          "logit": 4.744415283203125
+        },
+        {
+          "label": "SR",
+          "probability": 0.9331369400024414,
+          "logit": 2.6359055042266846
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.24513110518455505,
+          "logit": -1.1247509717941284
+        },
+        {
+          "label": "PAC",
+          "probability": 0.18242667615413666,
+          "logit": -1.4999922513961792
+        },
+        {
+          "label": "QWAVE",
+          "probability": 0.109185129404068,
+          "logit": -2.0990917682647705
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 0.1356929389388662
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00119_hr.npy"
+    },
+    {
+      "window_id": 18,
+      "record_id": "00121_hr",
+      "latency_ms": {
+        "preprocessing": 7.03,
+        "inference": 52.07,
+        "total": 59.1
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9728425145149231,
+          "logit": 3.578568458557129
+        },
+        {
+          "label": "SR",
+          "probability": 0.9081597328186035,
+          "logit": 2.2913694381713867
+        },
+        {
+          "label": "IVCD",
+          "probability": 0.2626422345638275,
+          "logit": -1.032280445098877
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.183275505900383,
+          "logit": -1.4943113327026367
+        },
+        {
+          "label": "QWAVE",
+          "probability": 0.18192262947559357,
+          "logit": -1.5033754110336304
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -4.285897621464178
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00121_hr.npy"
+    },
+    {
+      "window_id": 19,
+      "record_id": "00122_hr",
+      "latency_ms": {
+        "preprocessing": 8.95,
+        "inference": 63.24,
+        "total": 72.19
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9844127297401428,
+          "logit": 4.1455888748168945
+        },
+        {
+          "label": "SR",
+          "probability": 0.6885422468185425,
+          "logit": 0.7933129072189331
+        },
+        {
+          "label": "TAB_",
+          "probability": 0.6631715297698975,
+          "logit": 0.6774600148200989
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.6031812429428101,
+          "logit": 0.41873809695243835
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.5613985657691956,
+          "logit": 0.24684005975723267
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -3.2327304498699916
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00122_hr.npy"
+    },
+    {
+      "window_id": 20,
+      "record_id": "00128_hr",
+      "latency_ms": {
+        "preprocessing": 7.11,
+        "inference": 66.85,
+        "total": 73.96
+      },
+      "top5_diagnoses": [
+        {
+          "label": "ISCIN",
+          "probability": 0.9408127069473267,
+          "logit": 2.7660365104675293
+        },
+        {
+          "label": "LVOLT",
+          "probability": 0.8736269474029541,
+          "logit": 1.933415412902832
+        },
+        {
+          "label": "IVCD",
+          "probability": 0.7464832067489624,
+          "logit": 1.0799431800842285
+        },
+        {
+          "label": "ABQRS",
+          "probability": 0.707561194896698,
+          "logit": 0.8835688233375549
+        },
+        {
+          "label": "STACH",
+          "probability": 0.6591672897338867,
+          "logit": 0.6595855951309204
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 0.7629472546807903
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00128_hr.npy"
+    },
+    {
+      "window_id": 21,
+      "record_id": "00129_hr",
+      "latency_ms": {
+        "preprocessing": 10.96,
+        "inference": 51.69,
+        "total": 62.65
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9950968623161316,
+          "logit": 5.312962532043457
+        },
+        {
+          "label": "SR",
+          "probability": 0.9069865345954895,
+          "logit": 2.277383804321289
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.3379787802696228,
+          "logit": -0.6723144054412842
+        },
+        {
+          "label": "IVCD",
+          "probability": 0.11323367804288864,
+          "logit": -2.0581278800964355
+        },
+        {
+          "label": "AMI",
+          "probability": 0.07478909939527512,
+          "logit": -2.5153496265411377
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -1.3397113113929477
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00129_hr.npy"
+    },
+    {
+      "window_id": 22,
+      "record_id": "00132_hr",
+      "latency_ms": {
+        "preprocessing": 7.47,
+        "inference": 62.03,
+        "total": 69.51
+      },
+      "top5_diagnoses": [
+        {
+          "label": "SR",
+          "probability": 0.9269174933433533,
+          "logit": 2.5402753353118896
+        },
+        {
+          "label": "RAO/RAE",
+          "probability": 0.9095631241798401,
+          "logit": 2.308311939239502
+        },
+        {
+          "label": "NORM",
+          "probability": 0.7715454697608948,
+          "logit": 1.2170581817626953
+        },
+        {
+          "label": "IMI",
+          "probability": 0.4547893702983856,
+          "logit": -0.18133771419525146
+        },
+        {
+          "label": "LNGQT",
+          "probability": 0.432439386844635,
+          "logit": -0.27190542221069336
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 1.5463468800339708
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00132_hr.npy"
+    },
+    {
+      "window_id": 23,
+      "record_id": "00157_hr",
+      "latency_ms": {
+        "preprocessing": 5.6,
+        "inference": 53.28,
+        "total": 58.89
+      },
+      "top5_diagnoses": [
+        {
+          "label": "SR",
+          "probability": 0.9285925626754761,
+          "logit": 2.565267562866211
+        },
+        {
+          "label": "LAFB",
+          "probability": 0.8698106408119202,
+          "logit": 1.8992856740951538
+        },
+        {
+          "label": "LNGQT",
+          "probability": 0.6407135725021362,
+          "logit": 0.5784626007080078
+        },
+        {
+          "label": "NORM",
+          "probability": 0.6325452923774719,
+          "logit": 0.5431517362594604
+        },
+        {
+          "label": "NDT",
+          "probability": 0.6256434321403503,
+          "logit": 0.5135717391967773
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -1.0805019962072084
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00157_hr.npy"
+    },
+    {
+      "window_id": 24,
+      "record_id": "00160_hr",
+      "latency_ms": {
+        "preprocessing": 6.51,
+        "inference": 48.39,
+        "total": 54.91
+      },
+      "top5_diagnoses": [
+        {
+          "label": "STE_",
+          "probability": 0.9334600567817688,
+          "logit": 2.6410953998565674
+        },
+        {
+          "label": "SR",
+          "probability": 0.8407620787620544,
+          "logit": 1.663909673690796
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.7189787030220032,
+          "logit": 0.9394015073776245
+        },
+        {
+          "label": "LNGQT",
+          "probability": 0.693498969078064,
+          "logit": 0.8165287375450134
+        },
+        {
+          "label": "NORM",
+          "probability": 0.6451486349105835,
+          "logit": 0.5977814197540283
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -5.475904732391048
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00160_hr.npy"
+    },
+    {
+      "window_id": 25,
+      "record_id": "00162_hr",
+      "latency_ms": {
+        "preprocessing": 5.69,
+        "inference": 46.18,
+        "total": 51.87
+      },
+      "top5_diagnoses": [
+        {
+          "label": "SR",
+          "probability": 0.9754146337509155,
+          "logit": 3.680713415145874
+        },
+        {
+          "label": "LAFB",
+          "probability": 0.9696431756019592,
+          "logit": 3.4639084339141846
+        },
+        {
+          "label": "ASMI",
+          "probability": 0.966486930847168,
+          "logit": 3.3617329597473145
+        },
+        {
+          "label": "LVH",
+          "probability": 0.9579091668128967,
+          "logit": 3.12492299079895
+        },
+        {
+          "label": "ANEUR",
+          "probability": 0.9262067079544067,
+          "logit": 2.529829978942871
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 0.8572767854376929
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00162_hr.npy"
+    },
+    {
+      "window_id": 26,
+      "record_id": "00167_hr",
+      "latency_ms": {
+        "preprocessing": 5.76,
+        "inference": 60.6,
+        "total": 66.36
+      },
+      "top5_diagnoses": [
+        {
+          "label": "LMI",
+          "probability": 0.8898133039474487,
+          "logit": 2.0888350009918213
+        },
+        {
+          "label": "LVH",
+          "probability": 0.8667333126068115,
+          "logit": 1.8723790645599365
+        },
+        {
+          "label": "VCLVH",
+          "probability": 0.8536091446876526,
+          "logit": 1.763192892074585
+        },
+        {
+          "label": "LAO/LAE",
+          "probability": 0.7925770878791809,
+          "logit": 1.3405299186706543
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.7885079383850098,
+          "logit": 1.3159551620483398
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -4.257200564673351
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00167_hr.npy"
+    },
+    {
+      "window_id": 27,
+      "record_id": "00172_hr",
+      "latency_ms": {
+        "preprocessing": 8.01,
+        "inference": 56.23,
+        "total": 64.24
+      },
+      "top5_diagnoses": [
+        {
+          "label": "CRBBB",
+          "probability": 0.9999074935913086,
+          "logit": 9.288827896118164
+        },
+        {
+          "label": "RVH",
+          "probability": 0.9838497638702393,
+          "logit": 4.109535217285156
+        },
+        {
+          "label": "SR",
+          "probability": 0.9626531600952148,
+          "logit": 3.2494442462921143
+        },
+        {
+          "label": "LAFB",
+          "probability": 0.9624581336975098,
+          "logit": 3.244034767150879
+        },
+        {
+          "label": "ASMI",
+          "probability": 0.9120121002197266,
+          "logit": 2.338453769683838
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 0.22667684161151636
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00172_hr.npy"
+    },
+    {
+      "window_id": 28,
+      "record_id": "00175_hr",
+      "latency_ms": {
+        "preprocessing": 7.46,
+        "inference": 70.99,
+        "total": 78.45
+      },
+      "top5_diagnoses": [
+        {
+          "label": "IMI",
+          "probability": 0.7254934310913086,
+          "logit": 0.9718769192695618
+        },
+        {
+          "label": "ABQRS",
+          "probability": 0.7038707137107849,
+          "logit": 0.8657985925674438
+        },
+        {
+          "label": "NORM",
+          "probability": 0.5680541396141052,
+          "logit": 0.27391642332077026
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.4524940550327301,
+          "logit": -0.19059869647026062
+        },
+        {
+          "label": "SR",
+          "probability": 0.365845263004303,
+          "logit": -0.5500825643539429
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -2.6630940443705367
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00175_hr.npy"
+    },
+    {
+      "window_id": 29,
+      "record_id": "00180_hr",
+      "latency_ms": {
+        "preprocessing": 5.89,
+        "inference": 53.07,
+        "total": 58.96
+      },
+      "top5_diagnoses": [
+        {
+          "label": "CLBBB",
+          "probability": 0.9996336698532104,
+          "logit": 7.911543369293213
+        },
+        {
+          "label": "1AVB",
+          "probability": 0.9643669724464417,
+          "logit": 3.2981996536254883
+        },
+        {
+          "label": "LAO/LAE",
+          "probability": 0.9485467672348022,
+          "logit": 2.9142582416534424
+        },
+        {
+          "label": "LPR",
+          "probability": 0.8531497120857239,
+          "logit": 1.759521484375
+        },
+        {
+          "label": "SR",
+          "probability": 0.767309844493866,
+          "logit": 1.1931828260421753
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.08635368741802728
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00180_hr.npy"
+    },
+    {
+      "window_id": 30,
+      "record_id": "00201_hr",
+      "latency_ms": {
+        "preprocessing": 6.74,
+        "inference": 49.4,
+        "total": 56.14
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9706158638000488,
+          "logit": 3.4974746704101562
+        },
+        {
+          "label": "SR",
+          "probability": 0.8337933421134949,
+          "logit": 1.6127533912658691
+        },
+        {
+          "label": "PAC",
+          "probability": 0.44145864248275757,
+          "logit": -0.23524415493011475
+        },
+        {
+          "label": "IVCD",
+          "probability": 0.34473496675491333,
+          "logit": -0.6422638893127441
+        },
+        {
+          "label": "STACH",
+          "probability": 0.27249932289123535,
+          "logit": -0.9819787740707397
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.8910609649427879
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00201_hr.npy"
+    },
+    {
+      "window_id": 31,
+      "record_id": "00203_hr",
+      "latency_ms": {
+        "preprocessing": 8.36,
+        "inference": 49.44,
+        "total": 57.8
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9413434267044067,
+          "logit": 2.775608539581299
+        },
+        {
+          "label": "IRBBB",
+          "probability": 0.7307615280151367,
+          "logit": 0.998489499092102
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.711128830909729,
+          "logit": 0.9008728861808777
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.5756181478500366,
+          "logit": 0.30481094121932983
+        },
+        {
+          "label": "SR",
+          "probability": 0.49739131331443787,
+          "logit": -0.010434865951538086
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -4.931773423273095
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00203_hr.npy"
+    },
+    {
+      "window_id": 32,
+      "record_id": "00208_hr",
+      "latency_ms": {
+        "preprocessing": 6.01,
+        "inference": 48.39,
+        "total": 54.4
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9971709847450256,
+          "logit": 5.864987850189209
+        },
+        {
+          "label": "SR",
+          "probability": 0.6897531151771545,
+          "logit": 0.798965334892273
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.4565097689628601,
+          "logit": -0.17440173029899597
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.19911067187786102,
+          "logit": -1.3918620347976685
+        },
+        {
+          "label": "TAB_",
+          "probability": 0.15376190841197968,
+          "logit": -1.7053954601287842
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.48956334283647146
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00208_hr.npy"
+    },
+    {
+      "window_id": 33,
+      "record_id": "00210_hr",
+      "latency_ms": {
+        "preprocessing": 5.71,
+        "inference": 46.08,
+        "total": 51.79
+      },
+      "top5_diagnoses": [
+        {
+          "label": "ABQRS",
+          "probability": 0.8180238008499146,
+          "logit": 1.5030152797698975
+        },
+        {
+          "label": "NORM",
+          "probability": 0.7432727217674255,
+          "logit": 1.0630488395690918
+        },
+        {
+          "label": "LAFB",
+          "probability": 0.6856279373168945,
+          "logit": 0.7797579765319824
+        },
+        {
+          "label": "IMI",
+          "probability": 0.6853422522544861,
+          "logit": 0.7784329652786255
+        },
+        {
+          "label": "SR",
+          "probability": 0.6761968731880188,
+          "logit": 0.7363486289978027
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.7117407266752956
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00210_hr.npy"
+    },
+    {
+      "window_id": 34,
+      "record_id": "00218_hr",
+      "latency_ms": {
+        "preprocessing": 5.59,
+        "inference": 50.53,
+        "total": 56.11
+      },
+      "top5_diagnoses": [
+        {
+          "label": "SR",
+          "probability": 0.990720272064209,
+          "logit": 4.670599460601807
+        },
+        {
+          "label": "NORM",
+          "probability": 0.9693580269813538,
+          "logit": 3.4542622566223145
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.4188022017478943,
+          "logit": -0.3276923894882202
+        },
+        {
+          "label": "IVCD",
+          "probability": 0.36713752150535583,
+          "logit": -0.5445166826248169
+        },
+        {
+          "label": "QWAVE",
+          "probability": 0.1662069708108902,
+          "logit": -1.6127513647079468
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -2.37104078151184
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00218_hr.npy"
+    },
+    {
+      "window_id": 35,
+      "record_id": "00240_hr",
+      "latency_ms": {
+        "preprocessing": 8.92,
+        "inference": 69.38,
+        "total": 78.3
+      },
+      "top5_diagnoses": [
+        {
+          "label": "ABQRS",
+          "probability": 0.8421149849891663,
+          "logit": 1.6740496158599854
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.8026299476623535,
+          "logit": 1.402813196182251
+        },
+        {
+          "label": "NORM",
+          "probability": 0.785544216632843,
+          "logit": 1.2982730865478516
+        },
+        {
+          "label": "IMI",
+          "probability": 0.7603490352630615,
+          "logit": 1.1545943021774292
+        },
+        {
+          "label": "SR",
+          "probability": 0.5609607100486755,
+          "logit": 0.24506187438964844
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -2.147947222934799
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00240_hr.npy"
+    },
+    {
+      "window_id": 36,
+      "record_id": "00241_hr",
+      "latency_ms": {
+        "preprocessing": 7.31,
+        "inference": 68.66,
+        "total": 75.97
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9863472580909729,
+          "logit": 4.280062198638916
+        },
+        {
+          "label": "SR",
+          "probability": 0.8500263094902039,
+          "logit": 1.7348072528839111
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.41823408007621765,
+          "logit": -0.3300269544124603
+        },
+        {
+          "label": "ABQRS",
+          "probability": 0.3184193968772888,
+          "logit": -0.7610450983047485
+        },
+        {
+          "label": "AMI",
+          "probability": 0.2946259379386902,
+          "logit": -0.8730217814445496
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.7881827970507983
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00241_hr.npy"
+    },
+    {
+      "window_id": 37,
+      "record_id": "00243_hr",
+      "latency_ms": {
+        "preprocessing": 6.88,
+        "inference": 48.07,
+        "total": 54.95
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9862563014030457,
+          "logit": 4.2733330726623535
+        },
+        {
+          "label": "SR",
+          "probability": 0.6988726854324341,
+          "logit": 0.8419354557991028
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.6433197855949402,
+          "logit": 0.589802086353302
+        },
+        {
+          "label": "ABQRS",
+          "probability": 0.4006737470626831,
+          "logit": -0.40265870094299316
+        },
+        {
+          "label": "LMI",
+          "probability": 0.30081334710121155,
+          "logit": -0.8434277176856995
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -1.307521136745914
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00243_hr.npy"
+    },
+    {
+      "window_id": 38,
+      "record_id": "00245_hr",
+      "latency_ms": {
+        "preprocessing": 6.12,
+        "inference": 47.6,
+        "total": 53.72
+      },
+      "top5_diagnoses": [
+        {
+          "label": "ISCIN",
+          "probability": 1.0,
+          "logit": 20.104677200317383
+        },
+        {
+          "label": "INJIL",
+          "probability": 1.0,
+          "logit": 46.329620361328125
+        },
+        {
+          "label": "LMI",
+          "probability": 1.0,
+          "logit": 42.1202392578125
+        },
+        {
+          "label": "SBRAD",
+          "probability": 1.0,
+          "logit": 36.13328170776367
+        },
+        {
+          "label": "3AVB",
+          "probability": 1.0,
+          "logit": 40.77476501464844
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 0.2314966721239227
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00245_hr.npy"
+    },
+    {
+      "window_id": 39,
+      "record_id": "00252_hr",
+      "latency_ms": {
+        "preprocessing": 7.02,
+        "inference": 45.44,
+        "total": 52.45
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9880157113075256,
+          "logit": 4.412099361419678
+        },
+        {
+          "label": "SR",
+          "probability": 0.9115588068962097,
+          "logit": 2.3328182697296143
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.29097941517829895,
+          "logit": -0.890632152557373
+        },
+        {
+          "label": "VCLVH",
+          "probability": 0.28247731924057007,
+          "logit": -0.9322062730789185
+        },
+        {
+          "label": "LVH",
+          "probability": 0.1896766573190689,
+          "logit": -1.4521125555038452
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.8222077486531569
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00252_hr.npy"
+    },
+    {
+      "window_id": 40,
+      "record_id": "00271_hr",
+      "latency_ms": {
+        "preprocessing": 5.67,
+        "inference": 50.09,
+        "total": 55.76
+      },
+      "top5_diagnoses": [
+        {
+          "label": "ISCAL",
+          "probability": 0.9890698194503784,
+          "logit": 4.505241870880127
+        },
+        {
+          "label": "INVT",
+          "probability": 0.9666182398796082,
+          "logit": 3.3657946586608887
+        },
+        {
+          "label": "AMI",
+          "probability": 0.9595826268196106,
+          "logit": 3.167238235473633
+        },
+        {
+          "label": "IVCD",
+          "probability": 0.9316049814224243,
+          "logit": 2.6116080284118652
+        },
+        {
+          "label": "LAO/LAE",
+          "probability": 0.9315621256828308,
+          "logit": 2.610936403274536
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 0.3270441031458914
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00271_hr.npy"
+    },
+    {
+      "window_id": 41,
+      "record_id": "00274_hr",
+      "latency_ms": {
+        "preprocessing": 10.7,
+        "inference": 56.53,
+        "total": 67.23
+      },
+      "top5_diagnoses": [
+        {
+          "label": "ASMI",
+          "probability": 0.9928909540176392,
+          "logit": 4.939255237579346
+        },
+        {
+          "label": "INVT",
+          "probability": 0.9670609831809998,
+          "logit": 3.3796041011810303
+        },
+        {
+          "label": "SR",
+          "probability": 0.9366180896759033,
+          "logit": 2.6930971145629883
+        },
+        {
+          "label": "INJAS",
+          "probability": 0.906254231929779,
+          "logit": 2.268732786178589
+        },
+        {
+          "label": "ISCAL",
+          "probability": 0.8924516439437866,
+          "logit": 2.1160316467285156
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.47248472863095237
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00274_hr.npy"
+    },
+    {
+      "window_id": 42,
+      "record_id": "00299_hr",
+      "latency_ms": {
+        "preprocessing": 8.75,
+        "inference": 57.57,
+        "total": 66.32
+      },
+      "top5_diagnoses": [
+        {
+          "label": "LNGQT",
+          "probability": 0.9983627200126648,
+          "logit": 6.413098335266113
+        },
+        {
+          "label": "INVT",
+          "probability": 0.9958059787750244,
+          "logit": 5.469908714294434
+        },
+        {
+          "label": "LOWT",
+          "probability": 0.9936389327049255,
+          "logit": 5.051177978515625
+        },
+        {
+          "label": "NT_",
+          "probability": 0.9877848625183105,
+          "logit": 4.392788410186768
+        },
+        {
+          "label": "EL",
+          "probability": 0.9836894869804382,
+          "logit": 4.099499225616455
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": 1.2288349248891381
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00299_hr.npy"
+    },
+    {
+      "window_id": 43,
+      "record_id": "00318_hr",
+      "latency_ms": {
+        "preprocessing": 9.25,
+        "inference": 59.47,
+        "total": 68.71
+      },
+      "top5_diagnoses": [
+        {
+          "label": "AFIB",
+          "probability": 0.9589069485664368,
+          "logit": 3.1499552726745605
+        },
+        {
+          "label": "NST_",
+          "probability": 0.9347909092903137,
+          "logit": 2.662724733352661
+        },
+        {
+          "label": "IVCD",
+          "probability": 0.7813649773597717,
+          "logit": 1.2736386060714722
+        },
+        {
+          "label": "NDT",
+          "probability": 0.7771344780921936,
+          "logit": 1.2490448951721191
+        },
+        {
+          "label": "DIG",
+          "probability": 0.46413788199424744,
+          "logit": -0.14369523525238037
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -4.9673152129430616
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00318_hr.npy"
+    },
+    {
+      "window_id": 44,
+      "record_id": "00334_hr",
+      "latency_ms": {
+        "preprocessing": 9.16,
+        "inference": 62.09,
+        "total": 71.25
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.8606286644935608,
+          "logit": 1.8205218315124512
+        },
+        {
+          "label": "STE_",
+          "probability": 0.6869027614593506,
+          "logit": 0.7856789827346802
+        },
+        {
+          "label": "SVARR",
+          "probability": 0.5712730884552002,
+          "logit": 0.28704702854156494
+        },
+        {
+          "label": "SR",
+          "probability": 0.5386784672737122,
+          "logit": 0.15502354502677917
+        },
+        {
+          "label": "NDT",
+          "probability": 0.47925305366516113,
+          "logit": -0.08303520083427429
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -3.1240394723623472
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00334_hr.npy"
+    },
+    {
+      "window_id": 45,
+      "record_id": "00336_hr",
+      "latency_ms": {
+        "preprocessing": 7.17,
+        "inference": 47.43,
+        "total": 54.6
+      },
+      "top5_diagnoses": [
+        {
+          "label": "AFLT",
+          "probability": 0.9971122741699219,
+          "logit": 5.844402313232422
+        },
+        {
+          "label": "SVARR",
+          "probability": 0.9935008883476257,
+          "logit": 5.029580593109131
+        },
+        {
+          "label": "2AVB",
+          "probability": 0.9850385785102844,
+          "logit": 4.187206745147705
+        },
+        {
+          "label": "ISCAL",
+          "probability": 0.9119515419006348,
+          "logit": 2.3376996517181396
+        },
+        {
+          "label": "ILBBB",
+          "probability": 0.8949859142303467,
+          "logit": 2.1427133083343506
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -2.461849182858536
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00336_hr.npy"
+    },
+    {
+      "window_id": 46,
+      "record_id": "00347_hr",
+      "latency_ms": {
+        "preprocessing": 6.05,
+        "inference": 46.97,
+        "total": 53.03
+      },
+      "top5_diagnoses": [
+        {
+          "label": "ILBBB",
+          "probability": 0.9912922978401184,
+          "logit": 4.734800815582275
+        },
+        {
+          "label": "RAO/RAE",
+          "probability": 0.9739735126495361,
+          "logit": 3.6222710609436035
+        },
+        {
+          "label": "ISCAL",
+          "probability": 0.9717599749565125,
+          "logit": 3.538367986679077
+        },
+        {
+          "label": "LAO/LAE",
+          "probability": 0.9514483213424683,
+          "logit": 2.975356340408325
+        },
+        {
+          "label": "ISC_",
+          "probability": 0.9427632093429565,
+          "logit": 2.801617383956909
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.7682206068044748
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00347_hr.npy"
+    },
+    {
+      "window_id": 47,
+      "record_id": "00361_hr",
+      "latency_ms": {
+        "preprocessing": 5.79,
+        "inference": 49.85,
+        "total": 55.64
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9643981456756592,
+          "logit": 3.2991080284118652
+        },
+        {
+          "label": "SR",
+          "probability": 0.9423431754112244,
+          "logit": 2.7938618659973145
+        },
+        {
+          "label": "ISCAS",
+          "probability": 0.5032895803451538,
+          "logit": 0.013158440589904785
+        },
+        {
+          "label": "IRBBB",
+          "probability": 0.362508088350296,
+          "logit": -0.5644947290420532
+        },
+        {
+          "label": "NST_",
+          "probability": 0.2417372167110443,
+          "logit": -1.1431788206100464
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -0.6792992024062194
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00361_hr.npy"
+    },
+    {
+      "window_id": 48,
+      "record_id": "00364_hr",
+      "latency_ms": {
+        "preprocessing": 6.54,
+        "inference": 48.56,
+        "total": 55.09
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.994396448135376,
+          "logit": 5.1787261962890625
+        },
+        {
+          "label": "SARRH",
+          "probability": 0.721558690071106,
+          "logit": 0.9522062540054321
+        },
+        {
+          "label": "SR",
+          "probability": 0.6521369218826294,
+          "logit": 0.6284456253051758
+        },
+        {
+          "label": "SBRAD",
+          "probability": 0.6387633085250854,
+          "logit": 0.5700007677078247
+        },
+        {
+          "label": "SVARR",
+          "probability": 0.18507236242294312,
+          "logit": -1.482352375984192
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -1.5835922834208893
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00364_hr.npy"
+    },
+    {
+      "window_id": 49,
+      "record_id": "00377_hr",
+      "latency_ms": {
+        "preprocessing": 5.98,
+        "inference": 55.2,
+        "total": 61.18
+      },
+      "top5_diagnoses": [
+        {
+          "label": "LPFB",
+          "probability": 0.9873560667037964,
+          "logit": 4.357853412628174
+        },
+        {
+          "label": "NORM",
+          "probability": 0.850858747959137,
+          "logit": 1.7413520812988281
+        },
+        {
+          "label": "AFIB",
+          "probability": 0.720158040523529,
+          "logit": 0.945245623588562
+        },
+        {
+          "label": "SVARR",
+          "probability": 0.5959972739219666,
+          "logit": 0.38881444931030273
+        },
+        {
+          "label": "LMI",
+          "probability": 0.5070760250091553,
+          "logit": 0.02830606698989868
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -1.0414632658671894
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00377_hr.npy"
+    },
+    {
+      "window_id": 50,
+      "record_id": "00378_hr",
+      "latency_ms": {
+        "preprocessing": 5.7,
+        "inference": 61.27,
+        "total": 66.97
+      },
+      "top5_diagnoses": [
+        {
+          "label": "NORM",
+          "probability": 0.9667181968688965,
+          "logit": 3.368894100189209
+        },
+        {
+          "label": "LPFB",
+          "probability": 0.9107087254524231,
+          "logit": 2.3223190307617188
+        },
+        {
+          "label": "LMI",
+          "probability": 0.8454551696777344,
+          "logit": 1.6993908882141113
+        },
+        {
+          "label": "SR",
+          "probability": 0.7540454864501953,
+          "logit": 1.120306134223938
+        },
+        {
+          "label": "ABQRS",
+          "probability": 0.638977587223053,
+          "logit": 0.5709293484687805
+        }
+      ],
+      "qc_metadata": {
+        "qc_pass": true,
+        "warnings": [],
+        "powerline_snr_db": -2.1992926465526406
+      },
+      "ecg_window_npy": "D:\\Project\\ECG\\realtime_poc_report_windows_npy\\00378_hr.npy"
+    }
+  ]
+}

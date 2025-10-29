@@ -1,0 +1,46 @@
+{
+  "configuration": {
+    "model": "D:\\Project\\ECG\\ECGFounder\\onnx_models\\ecg_founder_all71.onnx",
+    "num_runs": 200,
+    "platform": "x86-64 (Windows)",
+    "preprocessing": "0.5-50 Hz bandpass + adaptive 50Hz notch + z-score",
+    "onnx_threads": 1
+  },
+  "x86_latency_ms": {
+    "preprocessing": {
+      "mean": 7.051390997949056,
+      "median": 6.943799962755293,
+      "std": 0.8033538471089746,
+      "min": 5.81240002065897,
+      "max": 10.608000040519983,
+      "p95": 8.589920034864917,
+      "p99": 9.371747978730125
+    },
+    "inference": {
+      "mean": 50.44903399888426,
+      "median": 48.58564998721704,
+      "std": 4.427279895966973,
+      "min": 45.130299986340106,
+      "max": 64.91059996187687,
+      "p95": 58.96549502504058,
+      "p99": 60.997648977790924
+    },
+    "total": {
+      "mean": 57.50042499683332,
+      "median": 55.54654999286868,
+      "std": 4.8721914818126,
+      "min": 51.57599999802187,
+      "max": 73.99499992607161,
+      "p95": 66.64730503107421,
+      "p99": 69.04981495696117
+    }
+  },
+  "arm_projected_latency_ms": {
+    "note": "Conservative 2x slowdown projection for ARM Cortex-A72 vs x86-64",
+    "preprocessing_mean": 14.102781995898113,
+    "inference_mean": 100.89806799776852,
+    "total_mean": 115.00084999366663,
+    "realtime_requirement_ms": 500,
+    "meets_requirement": true
+  }
+}
