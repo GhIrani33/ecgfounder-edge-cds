@@ -3,7 +3,7 @@ import os
 import torch
 import collections
 
-CHK = r"D:\Project\ECG\ECGFounder\checkpoint\12_lead_ECGFounder.pth" 
+CHK = r"...\ECGFounder\checkpoint\12_lead_ECGFounder.pth" 
 
 def summarize_value(v):
     try:
@@ -127,4 +127,5 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--path", "-p", default=CHK, help="checkpoint file path")
     args = ap.parse_args()
+
     main(args.path)
