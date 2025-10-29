@@ -9,8 +9,8 @@ Purpose:
 
 Usage: streamlit run ecg_ui_poc.py
 
-Author: PhD Research Project
-Date: October 2025
+Author: Ghasem
+https://github.com/GhIrani33
 """
 
 import streamlit as st
@@ -24,8 +24,8 @@ matplotlib.use('Agg')
 # ============================================================================
 # Configuration - UPDATE THESE PATHS
 # ============================================================================
-DEFAULT_REPORT = r"D:\Project\ECG\realtime_poc_report.json"
-DEFAULT_WINDOWS_DIR = r"D:\Project\ECG\realtime_poc_report_windows_npy"
+DEFAULT_REPORT = r"...\realtime_poc_report.json"
+DEFAULT_WINDOWS_DIR = r"...\realtime_poc_report_windows_npy"
 
 REPORT_JSON = Path(DEFAULT_REPORT)
 WINDOWS_DIR = Path(DEFAULT_WINDOWS_DIR)
@@ -221,3 +221,4 @@ st.markdown("""
 """.format(total_mean, total_mean * 2))
 
 st.info("💡 **Investor Note:** This is a proof-of-concept demonstration. System achieves expert-level diagnostic accuracy (0.909 AUROC) with real-time latency (<115 ms on Raspberry Pi 4).")
+
