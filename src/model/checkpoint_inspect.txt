@@ -1,4 +1,4 @@
-Inspected: D:\Project\ECG\ECGFounder\checkpoint\12_lead_ECGFounder.pth
+Inspected: ...\ECGFounder\checkpoint\12_lead_ECGFounder.pth
 
 Top-level type: dict
 
@@ -520,3 +520,4 @@ state-dict keys count: 509
  507. stage_list.6.block_list.3.se_fc2.bias -> Tensor, shape=(1024,), dtype=torch.float32
  508. dense.weight -> Tensor, shape=(150, 1024), dtype=torch.float32
  509. dense.bias -> Tensor, shape=(150,), dtype=torch.float32
+
