@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-ecg_realtime_streaming_poc.py - FIXED VERSION
+ecg_realtime_streaming_poc.py
 
 Purpose:
 - Simulate real-time ECG streaming from ADS1298 device
@@ -8,12 +8,6 @@ Purpose:
 - Demonstrate complete pipeline: load → preprocess → infer → report
 - Save results for UI visualization
 
-Key Changes:
-1. ✅ Use ecg_founder_all71.onnx (71-class fine-tuned model)
-2. ✅ Import ecg_preprocessing_pipeline.py (consistent preprocessing)
-3. ✅ Accurate latency reporting (preprocessing + inference)
-4. ✅ Save processed ECG windows for UI
-5. ✅ Better error handling and logging
 
 Usage:
 python ecg_realtime_streaming_poc.py `
@@ -21,8 +15,8 @@ python ecg_realtime_streaming_poc.py `
   --save_windows `
   --output "D:\Project\ECG\realtime_poc_report.json"
 
-Author: PhD Research Project  
-Date: October 2025
+Ghasem
+https://github.com/GhIrani33
 """
 
 import os
@@ -46,8 +40,8 @@ PTB_XL_ROOT = Path(r"D:\Project\ECG\Dataset\PTB-XL")
 RECORDS_DIR = PTB_XL_ROOT / "records500"
 DATABASE_CSV = PTB_XL_ROOT / "ptbxl_database.csv"
 
-ONNX_MODEL = Path(r"D:\Project\ECG\ECGFounder\onnx_models\ecg_founder_all71.onnx")
-LABELS_JSON = Path(r"D:\Project\ECG\ECGFounder\posttrain_all71\labels_all71.json")
+ONNX_MODEL = Path(r"...\ecg_founder_all71.onnx")
+LABELS_JSON = Path(r"...\labels_all71.json")
 
 DEFAULT_OUTPUT = Path("realtime_poc_report.json")
 DEFAULT_WINDOWS_DIR = Path("realtime_poc_windows_npy")
@@ -308,3 +302,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
