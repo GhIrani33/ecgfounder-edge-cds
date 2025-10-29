@@ -1,4 +1,7 @@
-
+"""
+Author: Ghasem
+https://github.com/GhIrani33
+"""
 
 from pathlib import Path
 import json, numpy as np, torch
@@ -8,7 +11,7 @@ import onnxruntime
 from onnxruntime import InferenceSession
 
 # مسیرها
-BASE = Path(r"D:\Project\ECG\ECGFounder")
+BASE = Path(r"...\ECGFounder")
 CKPT_71 = BASE / r"posttrain_all71\checkpoint_reg_e029.pth"      # 71-class ckpt
 LABELS_JSON = BASE / r"posttrain_all71\labels_all71.json"        # {"task":"all71","labels":[...]}
 ONNX_PATH = BASE / r"onnx_models\ecg_founder_all71.onnx"         
@@ -78,7 +81,7 @@ def main():
     in_name = sess.get_inputs()[0].name; out_name = sess.get_outputs()[0].name
 
 
-    db_csv = Path(r"D:\Project\ECG\Dataset\PTB-XL\ptbxl_database.csv")
+    db_csv = Path(r"...\PTB-XL\ptbxl_database.csv")
     test_df = make_test_df(db_csv)
     # parse scp_codes به dict
     import ast
@@ -91,7 +94,7 @@ def main():
 
 
     all_pt, all_ort, all_y = [], [], []
-    records_root = Path(r"D:\Project\ECG\Dataset\PTB-XL\records500")
+    records_root = Path(r"...\PTB-XL\records500")
     with torch.no_grad():
         for X,Y in iter_test(records_root, test_df, code_to_idx, input_size=input_size, bs=16):
             pt = model(torch.from_numpy(X).float()).cpu().numpy()
@@ -141,3 +144,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
