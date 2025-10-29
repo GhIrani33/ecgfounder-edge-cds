@@ -11,8 +11,8 @@ Usage:
 Output:
     lead_influence_scores3.csv - Per-lead attribution for top diagnoses
 
-Author: PhD Research Project
-Date: October 2025
+Author: Ghasem
+https://github.com/GhIrani33
 """
 
 import json
@@ -29,12 +29,12 @@ from ecg_preprocessing_pipeline import ECGPreprocessor
 # ============================================================================
 # Configuration
 # ============================================================================
-PTB_XL_ROOT = Path(r"D:\Project\ECG\Dataset\PTB-XL")
+PTB_XL_ROOT = Path(r"...\Dataset\PTB-XL")
 RECORDS_DIR = PTB_XL_ROOT / "records500"
 DATABASE_CSV = PTB_XL_ROOT / "ptbxl_database.csv"
 
-ONNX_MODEL = Path(r"D:\Project\ECG\ECGFounder\onnx_models\ecg_founder_all71.onnx")
-LABELS_JSON = Path(r"D:\Project\ECG\ECGFounder\posttrain_all71\labels_all71.json")
+ONNX_MODEL = Path(r"...\onnx_models\ecg_founder_all71.onnx")
+LABELS_JSON = Path(r"...\labels_all71.json")
 
 OUTPUT_CSV = Path("lead_influence_scores3.csv")
 
@@ -290,3 +290,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
