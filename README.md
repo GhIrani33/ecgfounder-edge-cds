@@ -1,4 +1,4 @@
-# ECGFounder Real-Time Deployment: Proof-of-Concept for Edge-Based Clinical Decision Support
+# ECGFounder Real-Time Deployment: Proof-of-Concept for Decision Support
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
