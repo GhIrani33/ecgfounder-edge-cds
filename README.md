@@ -1,6 +1,3 @@
-# ECG Founder-edge-cds
-# 📋 **GitHub README.md - Concise Professional Version**
-
 ```markdown
 # ECGFounder Real-Time Deployment: Proof-of-Concept for Edge-Based Clinical Decision Support
 
