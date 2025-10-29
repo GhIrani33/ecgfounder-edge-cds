@@ -18,6 +18,10 @@ eliminating numerical differences caused by operator mapping.
 
 - Export: opset=14, do_constant_folding=False
 - Validate: fixed input, expects all_close=True (rtol=1e-5, atol=1e-5)
+
+Author: Ghasem
+https://github.com/GhIrani33
+
 """
 
 import os
