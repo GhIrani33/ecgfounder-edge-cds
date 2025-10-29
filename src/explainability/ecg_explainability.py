@@ -14,6 +14,8 @@ Segment-level Grad-CAM + Lead Influence + Clinical Heuristic Evaluator (+ Temper
 
 python D:\Project\ECG\ecg_explainability.py --model_dir "D:\Project\ECG\ECGFounder" --checkpoint "D:\Project\ECG\ECGFounder\posttrain_all71\checkpoint_reg_e029.pth" --labels_file "D:\Project\ECG\ECGFounder\posttrain_all71\labels_all71.json" --ecg_samples "D:\Project\ECG\Dataset\PTB-XL\records500" --out_dir "D:\Project\ECG\ECGFounder\explainability_results" --device cuda --run_sanity_checks --seg_window_sec 2.0 --seg_stride_ratio 0.5 --seg_topk 3 --calibration_file "D:\Project\ECG\ECGFounder\posttrain_all71\calibration_temp.json" --min_conf_for_explain 0.3 --max_samples 30
 
+Ghasem
+https://github.com/GhIrani33
 """
 
 import os
@@ -424,3 +426,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
