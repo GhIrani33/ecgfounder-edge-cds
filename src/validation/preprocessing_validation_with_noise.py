@@ -16,8 +16,8 @@ Output:
     - preprocessing_validation_report_with_noise.json
     - preprocessing_validation_comparison.png
 
-Author: PhD Research Project
-Date: October 2025
+Author: Ghasem
+https://github.com/GhIrani33
 """
 
 
@@ -38,12 +38,12 @@ from ecg_noise_simulator import ECGNoiseSimulator
 # ============================================================================
 # Configuration
 # ============================================================================
-PTB_XL_ROOT = Path(r"D:\Project\ECG\Dataset\PTB-XL")
+PTB_XL_ROOT = Path(r"...\Dataset\PTB-XL")
 RECORDS_DIR = PTB_XL_ROOT / "records500"
 DATABASE_CSV = PTB_XL_ROOT / "ptbxl_database.csv"
 
-ONNX_MODEL = Path(r"D:\Project\ECG\ECGFounder\onnx_models\ecg_founder_all71.onnx")
-LABELS_JSON = Path(r"D:\Project\ECG\ECGFounder\posttrain_all71\labels_all71.json")
+ONNX_MODEL = Path(r"...\onnx_models\ecg_founder_all71.onnx")
+LABELS_JSON = Path(r"...\labels_all71.json")
 
 OUTPUT_JSON = Path("preprocessing_validation_report_with_noise.json")
 OUTPUT_PLOT = Path("preprocessing_validation_comparison.png")
@@ -367,3 +367,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
