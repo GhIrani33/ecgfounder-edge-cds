@@ -13,13 +13,15 @@ Real-time deployment of ECGFounder foundation model [1] for automated 12-lead EC
 
 This repository implements an end-to-end pipeline for deploying the ECGFounder foundation model [1] (trained on 10.5M ECG recordings) on ARM-based edge devices (Raspberry Pi 4). The system processes raw ECG signals directly from acquisition devices and provides real-time diagnostic predictions across 150 Label.
 
+Pre-trained ONNX models are available on Hugging Face: https://huggingface.co/ghirani33/ecgfounder-onnx
+
 **Objective:** Demonstrate that state-of-the-art ECG AI can achieve clinical-grade performance on affordable hardware, enabling deployment in settings where GPU infrastructure is unavailable.
 
 **Key Results:**
 - Diagnostic accuracy: 0.909 macro AUROC (71 conditions validated on PTB-XL benchmark, n=2,163)
 - Latency: 115 ms on Raspberry Pi 4 (real-time capable)
 - Noise robustness: 95% performance recovery under clinical noise conditions
-- Hardware cost: $75 (50× cheaper than GPU-based systems)
+- Hardware cost: $100 ( cheaper than GPU-based systems)
 
 **Status:** Research prototype validated on benchmark dataset. Requires prospective clinical validation before deployment.
 
