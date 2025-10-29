@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-ecg_noise_simulator.py - FIXED VERSION WITH AUTO-SCALING
+ecg_noise_simulator.py
 
-Critical Fix:
-- PTB-XL signals are in millivolts (mV), NOT microvolts (μV)
-- Auto-detect signal scale and adjust noise amplitude accordingly
+Author: Ghasem
+https://github.com/GhIrani33
 """
 
 import numpy as np
@@ -159,3 +158,4 @@ class ECGNoiseSimulator:
         print(f"[Noise Simulator] SNR = {snr_db:.1f} dB")
         
         return noisy_ecg
+
