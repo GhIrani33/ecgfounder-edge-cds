@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-generate_publication_figures.py - COMPLETE VERSION
+generate_publication_figures.py
 
-Generate all 4 publication-quality figures for Q1 journal submission.
-Author: PhD Research Project
-Date: October 2025
+Generate all 4 figures.
+
+Author: Ghasem
+https://github.com/GhIrani33
 """
 
 import json
@@ -25,14 +26,14 @@ warnings.filterwarnings('ignore')
 # ============================================================================
 
 # Input files
-METRICS_JSON = Path(r"D:\Project\ECG\ECGFounder\posttrain_all71\metrics_test_final-last.json")
-NOISE_VALIDATION_JSON = Path(r"D:\Project\ECG\preprocessing_validation_report_with_noise.json")
-BENCHMARK_JSON = Path(r"D:\Project\ECG\benchmark_complete_pipeline_results.json")
-LEAD_ATTRIBUTION_CSV = Path(r"D:\Project\ECG\lead_influence_scores3.csv")
-LABELS_JSON = Path(r"D:\Project\ECG\ECGFounder\posttrain_all71\labels_all71.json")
+METRICS_JSON = Path(r"...\metrics_test_final-last.json")
+NOISE_VALIDATION_JSON = Path(r"...\preprocessing_validation_report_with_noise.json")
+BENCHMARK_JSON = Path(r"...\benchmark_complete_pipeline_results.json")
+LEAD_ATTRIBUTION_CSV = Path(r"..\lead_influence_scores3.csv")
+LABELS_JSON = Path(r"...\labels_all71.json")
 
 # Output directory
-OUTPUT_DIR = Path(r"D:\Project\ECG\publication_figures")
+OUTPUT_DIR = Path(r"...\figures")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 # Style configuration
@@ -446,9 +447,9 @@ def generate_figure5_deployment():
 # ============================================================================
 
 def main():
-    """Generate all publication figures with error handling"""
+    """Generate all figures with error handling"""
     print("\n" + "="*70)
-    print("PUBLICATION-QUALITY FIGURE GENERATOR")
+    print("FIGURE GENERATOR")
     print("="*70)
     print(f"\nOutput directory: {OUTPUT_DIR}")
     print(f"Resolution: 300 DPI")
@@ -511,9 +512,10 @@ def main():
     print("\nEach figure saved in PNG, PDF, and SVG formats.")
     
     if success_count == total_figures:
-        print("\n✨ All figures ready for manuscript submission!")
+        print("\n✨ All figures ready")
     else:
         print(f"\n⚠️ {total_figures - success_count} figure(s) failed - check errors above")
 
 if __name__ == "__main__":
     main()
+
