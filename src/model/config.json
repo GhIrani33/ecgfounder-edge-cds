@@ -1,0 +1,22 @@
+{
+  "model_name": "ECGFounder-ONNX",
+  "version": "1.0",
+  "architecture": "Net1D",
+  "parameters": 28000000,
+  "input_shape": [1, 12, 5000],
+  "input_dtype": "float32",
+  "output_shape_12lead": [1, 150],
+  "output_shape_all71": [1, 71],
+  "preprocessing": {
+    "sampling_rate": 500,
+    "duration_seconds": 10,
+    "bandpass_filter": [0.5, 50.0],
+    "normalization": "z-score"
+  },
+  "performance": {
+    "platform": "ARM Cortex-A72",
+    "latency_ms": 115.0,
+    "auroc_ptbxl": 0.909
+  },
+  "license": "MIT"
+}
